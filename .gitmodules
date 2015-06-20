@@ -1,0 +1,15 @@
+[submodule "jdk6"]
+	path = jdk6
+	url = https://aur4.archlinux.org/jdk6.git
+[submodule "make-3.81"]
+	path = make-3.81
+	url = https://aur4.archlinux.org/make-3.81.git
+[submodule "minecraftsp-anjocaido"]
+	path = minecraftsp-anjocaido
+	url = https://aur4.archlinux.org/minecraftsp-anjocaido.git
+[submodule "repacman"]
+	path = repacman
+	url = https://aur4.archlinux.org/repacman.git
+[submodule "gcc44-multilib"]
+	path = gcc44-multilib
+	url = https://aur4.archlinux.org/gcc44-multilib.git
