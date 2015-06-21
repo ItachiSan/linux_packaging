@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 21 Jun 2015 14:23:00 +0200
+Source: libmtp
+Binary: libmtp9 libmtp-common libmtp-runtime libmtp-dev libmtp-dbg libmtp-doc mtp-tools
+Architecture: source
+Version: 1.1.6-1ppa2
+Distribution: precise
+Urgency: low
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Giovanni Santini <giovannisantini93@yahoo.it>
+Description: 
+ libmtp-common - Media Transfer Protocol (MTP) common files
+ libmtp-dbg - Media Transfer Protocol (MTP) debugging symbols
+ libmtp-dev - Media Transfer Protocol (MTP) development files
+ libmtp-doc - Media Transfer Protocol (MTP) library documentation
+ libmtp-runtime - Media Transfer Protocol (MTP) runtime tools
+ libmtp9    - Media Transfer Protocol (MTP) library
+ mtp-tools  - Media Transfer Protocol (MTP) library tools
+Changes: 
+ libmtp (1.1.6-1ppa2) precise; urgency=low
+ .
+   * Backport to precise, the right way
+Checksums-Sha1: 
+ 19e811f41239efba7dbccb1e882f018d3fd5ec4d 2023 libmtp_1.1.6-1ppa2.dsc
+ f9e55c75399fc5f4deabcdfa58e1b01b2e6e3283 733519 libmtp_1.1.6.orig.tar.gz
+ bc6edfb874051b8b52a70469d52200b9af900be8 30396 libmtp_1.1.6-1ppa2.debian.tar.gz
+Checksums-Sha256: 
+ 48bd89d745f455fb0e292d061e6708bfe61da0d73e37c101d3226d585d17ef08 2023 libmtp_1.1.6-1ppa2.dsc
+ 3a1c1c83af91de4052eb54feb795c141b4c04a252e0031954ebbf6175970cb0a 733519 libmtp_1.1.6.orig.tar.gz
+ ba9bdf425984aad5e42c9dade1ca5428460d495934cf0040b6515f1fa9aae6e5 30396 libmtp_1.1.6-1ppa2.debian.tar.gz
+Files: 
+ f024b0fae2725a3f75d70cda7053a190 2023 libs optional libmtp_1.1.6-1ppa2.dsc
+ 87835626dbcf39e62bfcdd4ae6da2063 733519 libs optional libmtp_1.1.6.orig.tar.gz
+ febe799cc6d2d98a88b35c2466fddbec 30396 libs optional libmtp_1.1.6-1ppa2.debian.tar.gz
+Original-Maintainer: Alessio Treglia <alessio@debian.org>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQEcBAEBAgAGBQJVhq1jAAoJEE20cJYvrev14j0H/AoBESVx4SYqpE0y4CW/CDkU
+p2BR0V7Yqu9KvSLlKqQdGxzU4QNfZahYOsoQUpES1H6BlRhfkyM+SAPQW6l3b96R
+6neUTw1L3OloaLWZg3J/jL4AqubaStV9xO1PAxyz+bOkSfZJH2SEfm5el9kuLz3R
+Pbnjk77hUJwnOcWtHAvR8rwuHhUBsLs67nH3IQVYbS8UdmndUhpKzAQZvi2Ov6iO
+pFkz/5040WOuMyF5976+cMqcadSbFQoSmhaYClbOaK0XV7K+cclusbRoHWFF5KBR
+OYEAN4xwSanlu6BS4rmm6mrl/4dN4sddNhkuhh7jmRjiBsaA988jb1UfbV2i2X0=
+=6ftc
+-----END PGP SIGNATURE-----
