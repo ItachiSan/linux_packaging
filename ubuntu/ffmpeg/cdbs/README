@@ -1,0 +1,4 @@
+Just took official sources of 'trusty' here:
+http://packages.ubuntu.com/trusty/cdbs
+
+As it builds on 'precise', I just added a changelog voice and uploaded it.
