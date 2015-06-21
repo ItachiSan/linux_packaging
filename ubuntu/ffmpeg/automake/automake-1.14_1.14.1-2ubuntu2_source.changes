@@ -1,0 +1,44 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 21 Jun 2015 18:59:01 +0200
+Source: automake-1.14
+Binary: automake
+Architecture: source
+Version: 1:1.14.1-2ubuntu2
+Distribution: precise
+Urgency: low
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Giovanni Santini <giovannisantini93@yahoo.it>
+Description: 
+ automake   - Tool for generating GNU Standards-compliant Makefiles
+Changes: 
+ automake-1.14 (1:1.14.1-2ubuntu2) precise; urgency=low
+ .
+   * Backport to precise
+Checksums-Sha1: 
+ ace891a4dcd9f2feee61ba57d7502b2bdfb6dc1d 1970 automake-1.14_1.14.1-2ubuntu2.dsc
+ 2ced676f6b792a95c5919243f81790b1172c7f5b 1488984 automake-1.14_1.14.1.orig.tar.xz
+ a3986abe99a397b2b4f3709a91a7d76143474f6b 10103 automake-1.14_1.14.1-2ubuntu2.debian.tar.gz
+Checksums-Sha256: 
+ 5375e06af23aff27765ed44d4b842fcc9ed3c6283b0031716a9bf8cada2a19ba 1970 automake-1.14_1.14.1-2ubuntu2.dsc
+ a9b4f04b8b69cac2e832a38a718943aa976dbdad0097211f8b3448afdacf0669 1488984 automake-1.14_1.14.1.orig.tar.xz
+ d0bf644fe6f072c3750d14377af176f1463e321e1dcbda32e79a01c54ac29787 10103 automake-1.14_1.14.1-2ubuntu2.debian.tar.gz
+Files: 
+ bbc04b1095aae8c4ef548eefa17f659f 1970 devel optional automake-1.14_1.14.1-2ubuntu2.dsc
+ 7fc29854c520f56b07aa232a0f880292 1488984 devel optional automake-1.14_1.14.1.orig.tar.xz
+ 6a9cf25f4ed7e76d62c260d8874416ab 10103 devel optional automake-1.14_1.14.1-2ubuntu2.debian.tar.gz
+Original-Maintainer: Eric Dorland <eric@debian.org>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQEcBAEBAgAGBQJVhu2DAAoJEE20cJYvrev18msIAIRZw4asuC/8PSEBhVe2S+Oy
+yvUEPlHV2++RTqXNgWfDBdezaWwdOHMXe7iDtUuVYc4diNsMqL9Xfq8TzteatjVa
+Y6/NKVAUOR+ai+F7wRaeHXUWxWPo4ghV+OwTRGNuJzNTU6O6z2bwueuv9ZeglkEj
+TaJCy57Syu7eMz4k40xsAEt3mUK4XXNCiV58obTZV6ZOSlIbQXY7vPhunQMMnIrm
+RA4dkW0TWyY+Gj4PvxwkSsiSkfNi++2GmP5+mvhCpsVzBs36w98lkGVBE3TXgsVq
+4Eh3KmhOa55L3YyUDous2TeDfKE8SjKHobXekiRiZAyx07ObjNQF4C0Hr70amms=
+=EpF4
+-----END PGP SIGNATURE-----
