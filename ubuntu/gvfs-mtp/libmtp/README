@@ -1,0 +1,4 @@
+Original package:
+https://launchpad.net/~langdalepl/+archive/ubuntu/gvfs-mtp/+packages
+
+Took 'precise' libmtp sources and added a changelog entry.
