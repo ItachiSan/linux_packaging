@@ -1,0 +1,7 @@
+Unless specified, these packages are uploaded here: https://launchpad.net/~itachi-san/+archive/ubuntu/ffmpeg
+Also, unless specified, these packages are made by just doing:
+* Unpack packages
+* cd software-to-backport/
+* debchange -i and add 'Backport to precise'
+* debuild -S -sa
+* dput ppa-url backported-software_source.changes
