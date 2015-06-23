@@ -12,7 +12,7 @@ OTHERMIRROR="deb http://ppa.launchpad.net/itachi-san/gvfs-mtp/ubuntu precise mai
 2. Add GPG keys to your pbuilder-dist instance
 ```
 pbuilder-dist precise login --save-after-login
-apt-key adv --keyserver pgp.mit.edu --recv-keys 2FADEBF5
+apt-key adv --keyserver pgp.mit.edu --recv-keys 2FADEBF5 18F5A5F7
 exit
 ```
 3. Update sources in your pbuilder-dist instances
