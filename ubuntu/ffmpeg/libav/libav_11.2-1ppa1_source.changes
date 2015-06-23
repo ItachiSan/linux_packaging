@@ -1,0 +1,62 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 22 Jun 2015 18:24:04 +0200
+Source: libav
+Binary: libav-tools libav-dbg libav-doc libavutil54 libavcodec56 libavdevice55 libavformat56 libavfilter5 libswscale3 libavutil-dev libavcodec-dev libavdevice-dev libavformat-dev libavfilter-dev libswscale-dev libavresample-dev libavresample2 libavcodec-extra-56 libavcodec-extra
+Architecture: source
+Version: 6:11.2-1ppa1
+Distribution: precise
+Urgency: low
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Changed-By: Giovanni Santini <giovannisantini93@yahoo.it>
+Description: 
+ libav-dbg  - Debug symbols for Libav related packages
+ libav-doc  - Documentation of the Libav API
+ libav-tools - Multimedia player, encoder and transcoder
+ libavcodec-dev - Development files for libavcodec
+ libavcodec-extra - Libav codec library (additional codecs meta-package)
+ libavcodec-extra-56 - Libav codec library (additional codecs)
+ libavcodec56 - Libav codec library
+ libavdevice-dev - Development files for libavdevice
+ libavdevice55 - Libav device handling library
+ libavfilter-dev - Development files for libavfilter
+ libavfilter5 - Libav video filtering library
+ libavformat-dev - Development files for libavformat
+ libavformat56 - Libav file format library
+ libavresample-dev - Development files for libavresample
+ libavresample2 - Libav audio resampling library
+ libavutil-dev - Development files for libavutil
+ libavutil54 - Libav utility library
+ libswscale-dev - Development files for libswscale
+ libswscale3 - Libav video scaling library
+Changes: 
+ libav (6:11.2-1ppa1) precise; urgency=low
+ .
+   *  Backported to precise
+   *  Build-Dependecy 'libgnutls28-dev' replaced by 'libgnutls-dev'
+Checksums-Sha1: 
+ 7f4e8709b51b92207587c57174871423a3b57eda 3461 libav_11.2-1ppa1.dsc
+ 52ba52cabe5d86b45ce62f56e11fa7912c6e5083 4855224 libav_11.2.orig.tar.xz
+ 1041195c09274f1b1e72740607491407f7cc97fb 74948 libav_11.2-1ppa1.debian.tar.gz
+Checksums-Sha256: 
+ 2f1202f93e0aa8c9296973c06652a8544ea94d7f92632ee1a0fff4747c46f6db 3461 libav_11.2-1ppa1.dsc
+ 48f4a36cd823f2449d1e45b114371033dc68f0e09ff0f7c841405c09a707682e 4855224 libav_11.2.orig.tar.xz
+ b1f251435d84d4e699d775fcfad427a394127efab29f0cb92ff43c454e1238ca 74948 libav_11.2-1ppa1.debian.tar.gz
+Files: 
+ de3a37fdb51da4f92a6288e5725d0369 3461 libs optional libav_11.2-1ppa1.dsc
+ b8680998ad53376c37508688293ecaa4 4855224 libs optional libav_11.2.orig.tar.xz
+ d3f0e5feb914e1eb7abf1c83bf7d4dd4 74948 libs optional libav_11.2-1ppa1.debian.tar.gz
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQEcBAEBAgAGBQJViDccAAoJEE20cJYvrev18q4IAISmhMo94o4Bc288etS1B+nw
+MJwdSRRPw70WIOHb/udN/kS0tuHcFKMnuvvoxk2uKjjO5GDWXKVM9rqPO0eMbXQN
+MhIXXZ8g5avuyiNiuKg+NQ/x8IINiWRqIAL/6FDjFQXdAMPnyiMt3EZk3PZFnUCO
+QQtIiQILfBi0x4VI0IGwOjHiF78unuPQ/Q9/d673XXn2RcL+g05jo1TjUBfh1tqi
+h0IJgBihIiNsxS0cc4ggfJANhmQevigUaO8TL1t9robXXtKEVOHllmW5A72SnLhC
+k5N86aSkO7JNo9VsfNh7Wn0mMiVPN4uhGYpF4pClG9ZqgiewvKsOdt9iZljGcVg=
+=K8hh
+-----END PGP SIGNATURE-----
