@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 23 Jun 2015 09:50:19 +0200
+Source: automake-1.14
+Binary: automake
+Architecture: source
+Version: 1:1.14.1-2ubuntu3
+Distribution: precise
+Urgency: low
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Giovanni Santini <giovannisantini93@yahoo.it>
+Description: 
+ automake   - Tool for generating GNU Standards-compliant Makefiles
+Changes: 
+ automake-1.14 (1:1.14.1-2ubuntu3) precise; urgency=low
+ .
+   * Backport to precise
+   * Increment change number, so I can reupload this on my libav PPA
+Checksums-Sha1: 
+ e674b6a9d3f6139ba8bd5bcc76f9bf38daa558a0 1970 automake-1.14_1.14.1-2ubuntu3.dsc
+ 2ced676f6b792a95c5919243f81790b1172c7f5b 1488984 automake-1.14_1.14.1.orig.tar.xz
+ 294c277716ed7917621be6c508c796dce1e9fdc9 10128 automake-1.14_1.14.1-2ubuntu3.debian.tar.gz
+Checksums-Sha256: 
+ 6d3014f6caa5ada72e603cbf32213452f6bf05dcf45cf0bd502d5977b14f8bdb 1970 automake-1.14_1.14.1-2ubuntu3.dsc
+ a9b4f04b8b69cac2e832a38a718943aa976dbdad0097211f8b3448afdacf0669 1488984 automake-1.14_1.14.1.orig.tar.xz
+ 75bb17213c90af7836b0d6ab8b42dbc16a5d2bb9aa18113c31e82608678ffb59 10128 automake-1.14_1.14.1-2ubuntu3.debian.tar.gz
+Files: 
+ 245fe97eba7219bedb16626a1ffd7e31 1970 devel optional automake-1.14_1.14.1-2ubuntu3.dsc
+ 7fc29854c520f56b07aa232a0f880292 1488984 devel optional automake-1.14_1.14.1.orig.tar.xz
+ 5c9bb7256618b3807c6cde7e8daa98f4 10128 devel optional automake-1.14_1.14.1-2ubuntu3.debian.tar.gz
+Original-Maintainer: Eric Dorland <eric@debian.org>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQEcBAEBAgAGBQJViRAQAAoJEE20cJYvrev16F0H+gJu5Qf0Uvdd0Napj8/UhC1R
+VqKKGhsKqhlcSntR2IozO/8kWSyleEjPEMvZeE0ZqQ01LPU3Eo3wkJrAt4zAfnFv
+sYB12Khss5DVecxau8mCWcaedAlgoOunWBIzGw3nyM+lLdVydRfbuaJC0KXbjLcj
+Sy+yAEnZbECukOCnISYeoUr73BUm6/9ej5d8W/h4nx66tUeGHzHyx1njTAvlkALC
+8CFnuEFjNq3mgbTS0waS2S9UQ36mN2R0hJ61W0K+3ii48sBI4aM3Z7Pr2+JDm03y
+UzKeig/t9EdS0iIrgaCzbH/xvDnN5duy4XogHda28U+2/XZVsyoW6BjqFLg8vog=
+=Bpkk
+-----END PGP SIGNATURE-----
