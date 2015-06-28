@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 28 Jun 2015 12:57:59 +0200
+Source: cmake
+Binary: cmake cmake-data cmake-curses-gui cmake-qt-gui cmake-doc cmake-dbg
+Architecture: source
+Version: 2.8.12.2-0ubuntu4
+Distribution: precise
+Urgency: low
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Giovanni Santini <giovannisantini93@yahoo.it>
+Description: 
+ cmake      - cross-platform, open-source make system
+ cmake-curses-gui - curses based user interface for CMake (ccmake)
+ cmake-data - CMake data files (modules, templates and documentation)
+ cmake-dbg  - debugging symbols for CMake
+ cmake-doc  - extended documentation in various formats for CMake
+ cmake-qt-gui - Qt4 based user interface for CMake (cmake-gui)
+Changes: 
+ cmake (2.8.12.2-0ubuntu4) precise; urgency=low
+ .
+   * Backport to precise
+Checksums-Sha1: 
+ e35b7b03d41b19e41c990e5e57b22289474899ee 2076 cmake_2.8.12.2-0ubuntu4.dsc
+ cca70b307aa32a6a32c72e01fdfcecc84c1c2690 6068231 cmake_2.8.12.2.orig.tar.gz
+ b7c6c074ec95d8b1e368b28912e318b1c2b02954 33947 cmake_2.8.12.2-0ubuntu4.debian.tar.gz
+Checksums-Sha256: 
+ c378031c6d2869e2987d95f1a540539f724f37f901a10ac084211fcfc1bb1426 2076 cmake_2.8.12.2-0ubuntu4.dsc
+ 8c6574e9afabcb9fc66f463bb1f2f051958d86c85c37fccf067eb1a44a120e5e 6068231 cmake_2.8.12.2.orig.tar.gz
+ f923794c6b0ff1f53101de1ec79561dee42dc41eafa17bcf2f4fcb96d951dbc3 33947 cmake_2.8.12.2-0ubuntu4.debian.tar.gz
+Files: 
+ 0f591cb9f4e6716e57f51c98a09fa7a0 2076 devel optional cmake_2.8.12.2-0ubuntu4.dsc
+ 17c6513483d23590cbce6957ec6d1e66 6068231 devel optional cmake_2.8.12.2.orig.tar.gz
+ 965efcc3edfbcb1f0625d463491f5e92 33947 devel optional cmake_2.8.12.2-0ubuntu4.debian.tar.gz
+Original-Maintainer: Modestas Vainius <modax@debian.org>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQEcBAEBAgAGBQJVj9NbAAoJEE20cJYvrev1EwYH/1ojICbuP8GwAQYnzrnugZXz
++trp2CsIwN3QfR62xGPUrcYFs7Q6QGGsIsFgJs7ckGve1rXP1qIJHekdsjiYBJeJ
+6gA7LY15ZnECvzJwGwzMSH8ji+kVuB7IUZaYFyDT5rkrPbIyAnlae1YXWuspd52+
+XcL32eZbdpVVP11D/c52frSeUb07cZgJmTX1MxQtgmTimXGVtsGpASVbr3GJeCj3
+UkYBRyyOYgbXvICqMc1LjQA5hZbgwBeDU05P2UekTN7uKq36HTeh9UoESxfGRUii
+0l7xEzs8adVlgwqq/6OqmU7MGpxDVc8DJYPxJO6Go+FSyv/Z5DJiQ4C32ErMmGo=
+=RM0O
+-----END PGP SIGNATURE-----
