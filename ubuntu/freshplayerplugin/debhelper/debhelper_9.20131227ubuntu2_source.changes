@@ -1,0 +1,41 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 28 Jun 2015 11:13:33 +0200
+Source: debhelper
+Binary: debhelper
+Architecture: source
+Version: 9.20131227ubuntu2
+Distribution: precise
+Urgency: low
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Giovanni Santini <giovannisantini93@yahoo.it>
+Description: 
+ debhelper  - helper programs for debian/rules
+Changes: 
+ debhelper (9.20131227ubuntu2) precise; urgency=low
+ .
+   * Backport to precise
+Checksums-Sha1: 
+ 48f97618c3f2461a94b751f15b335031a79f121b 1419 debhelper_9.20131227ubuntu2.dsc
+ 90d3069e9a92c5131e6ac8f059595055df34152b 479568 debhelper_9.20131227ubuntu2.tar.gz
+Checksums-Sha256: 
+ 601ffb3e04c999c07f0f4ee6818f6719ee2b556a8094b24a6e4624c7887305fa 1419 debhelper_9.20131227ubuntu2.dsc
+ 6172ea21988026a575a56e0a8afce075857e8db0dde6dc7da7b911e4d5c96685 479568 debhelper_9.20131227ubuntu2.tar.gz
+Files: 
+ edc3f62660d7a1f98a0487dc3fb34187 1419 devel optional debhelper_9.20131227ubuntu2.dsc
+ 4c6e6445d50eda4aeac0650fe789758b 479568 devel optional debhelper_9.20131227ubuntu2.tar.gz
+Original-Maintainer: Debhelper Maintainers <debhelper-devel@lists.alioth.debian.org>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQEcBAEBAgAGBQJVj7suAAoJEE20cJYvrev1k4sH/2q3c6i/RxlPvnrHrZOO2Icn
+V+/EpGwpayWN/ZK4zYyJL9YGOun/ulZE6Na5dFfzFXjf230TmllKy/QUtJKx70yl
+XllK+y3gakdFEOTw9CW7U90X2Z9UrTzYqVcT14msLwOb9jyUVBWj6L6Mvfk8tDti
+F0roJSsfu0D0+zO3GZInDe9Wb7bI4HSCTnuy8Xc1PHwLkTYLFHQV+h26xNA31ngW
+0u/iGtSypEg0SIZmyOkBkaRyW7NvYaAK8pdwzxC5zv+MCi8KganT0rXkGJtZjLcB
+ItTATFYosxb2ffBOnFytmYu2J8MohyK+NwDmjjz2kWAIENI9X0r72iCa70d67dc=
+=Yi4O
+-----END PGP SIGNATURE-----
