@@ -5,7 +5,7 @@ Format: 3.0 (native)
 Source: dpkg
 Binary: libdpkg-dev, dpkg, dpkg-dev, libdpkg-perl, dselect
 Architecture: any all
-Version: 1.17.5ubuntu5.5
+Version: 1.17.5ubuntu5.5~precise
 Origin: debian
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Uploaders: Guillem Jover <guillem@debian.org>, Raphaël Hertzog <hertzog@debian.org>
@@ -21,21 +21,21 @@ Package-List:
  libdpkg-dev deb libdevel optional
  libdpkg-perl deb perl optional
 Checksums-Sha1: 
- 02594942f597fad514512a84d758f05e3010f5d0 3850472 dpkg_1.17.5ubuntu5.5.tar.xz
+ 0a06976c8d3b4237e0e34b61792d2253a4e134b2 3849104 dpkg_1.17.5ubuntu5.5~precise.tar.xz
 Checksums-Sha256: 
- d48da283f1f0997a54882b19a100e933709719eda97fbe28cdc580f92a260a88 3850472 dpkg_1.17.5ubuntu5.5.tar.xz
+ 9a7def2631a536e570d755fa4ddf3214266435e4425a2b7627eb81ea0c51a76c 3849104 dpkg_1.17.5ubuntu5.5~precise.tar.xz
 Files: 
- 5f533c29b9cd2634911c95cfe3350675 3850472 dpkg_1.17.5ubuntu5.5.tar.xz
+ 6a6d81da81a259dd07444db45accc205 3849104 dpkg_1.17.5ubuntu5.5~precise.tar.xz
 Original-Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iQEcBAEBAgAGBQJVj8Q5AAoJEE20cJYvrev1MAQH/1S7ZYMUlvlgD3gj8Mta7dh7
-lwo4kLq7v0G2TiMxUXtvDSqyOGUj6lluTzA++9rkpNB2k4QPS3MJ+HwfyeQHBj5+
-IVu/rfhBA770w3pqldydoXs+ia7cgZTmtIRLIWftn6TKxRe0RE8z63Wt5MspG/36
-IFU8l4FFiTKL5DNCN1FhymfUEeUYxOX7jv7KtvIZZLoonQ0+KexZJl/YA92P2sWz
-rhiyT+zbtYaDV89thZ7VFRYOHNLcZKb153+z2jyBOBkjhCqT531h/kD5k1YA150j
-sZWYGibly2Xg01mF7B1N1IAvLs8X5oa79K5Au4MSE1S6ckc+paezBaqVeSEUGnI=
-=Qkpb
+iQEcBAEBAgAGBQJVkZzaAAoJEE20cJYvrev12EkH/2lrDKbuobMu1M78u5JRXzEI
+yroLRVRFYItqQXHg7SeDu7Yk8WPW9LIfovRTFwJwFsV3bboAUSffifZKK8ry9tvz
+aWPx1V8cNRNdkTTlexWshWrLKbw5aAIm3InB1ycGl+pDVooxqWNqTCwOuJS7ugQ9
+4BREqHyLcSAwdrnghUT0rzzqLuav0Nqrkb0qk6QVjVxH0d5VfcmpgiMBduQ/pb1P
+ysnzbfUbE3WSf8nxD20+g15bwImmcaMFBIJHM3vAiLZa6L0EAehsTm2r/pBqHHA5
+l7cQiWHMfbgeMgdhDBMuX958hophvhLkapoKpiYhOCEuXeagDoqaRXU1v9H1+Gc=
+=cVWX
 -----END PGP SIGNATURE-----
