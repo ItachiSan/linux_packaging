@@ -25,3 +25,9 @@
 [submodule "devscripts"]
 	path = devscripts
 	url = ssh+git://aur@aur4.archlinux.org/devscripts.git
+[submodule "calise-git"]
+	path = calise-git
+	url = ssh+git://aur@aur4.archlinux.org/calise-git.git/
+[submodule "calise"]
+	path = calise
+	url = ssh+git://aur@aur4.archlinux.org/calise.git/
