@@ -31,3 +31,12 @@
 [submodule "calise"]
 	path = calise
 	url = ssh+git://aur@aur4.archlinux.org/calise.git/
+[submodule "opencv-java"]
+	path = opencv-java
+	url = ssh+git://aur@aur4.archlinux.org/opencv-java.git/
+[submodule "java-gnome"]
+	path = java-gnome
+	url = ssh+git://aur@aur4.archlinux.org/java-gnome.git/
+[submodule "gettext-java"]
+	path = gettext-java
+	url = ssh+git://aur@aur4.archlinux.org/gettext-java.git/
