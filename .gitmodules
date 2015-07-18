@@ -40,3 +40,6 @@
 [submodule "gettext-java"]
 	path = gettext-java
 	url = ssh+git://aur@aur4.archlinux.org/gettext-java.git/
+[submodule "yawls"]
+	path = yawls
+	url = ssh+git://aur@aur4.archlinux.org/yawls.git/
