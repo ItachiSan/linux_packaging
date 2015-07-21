@@ -43,3 +43,6 @@
 [submodule "yawls"]
 	path = yawls
 	url = ssh+git://aur@aur4.archlinux.org/yawls.git/
+[submodule "eoloapp"]
+	path = eoloapp
+	url = ssh+git://aur@aur4.archlinux.org/eoloapp.git/
