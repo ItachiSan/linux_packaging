@@ -46,3 +46,6 @@
 [submodule "eoloapp"]
 	path = eoloapp
 	url = ssh+git://aur@aur4.archlinux.org/eoloapp.git/
+[submodule "telegram-desktop-bin-dev"]
+	path = telegram-desktop-bin-dev
+	url = ssh+git://aur@aur4.archlinux.org/telegram-desktop-bin-dev.git/
