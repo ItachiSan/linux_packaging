@@ -49,3 +49,15 @@
 [submodule "telegram-desktop-bin-dev"]
 	path = telegram-desktop-bin-dev
 	url = ssh+git://aur@aur4.archlinux.org/telegram-desktop-bin-dev.git/
+[submodule "gadget-deadbeef-dhcp"]
+	path = gadget-deadbeef-dhcp
+	url = ssh+git://aur@aur4.archlinux.org/gadget-deadbeef-dhcp.git/
+[submodule "gadget-deadbeef-legacy-dhcp"]
+	path = gadget-deadbeef-legacy-dhcp
+	url = ssh+git://aur@aur4.archlinux.org/gadget-deadbeef-legacy-dhcp.git/
+[submodule "gnome-defaults-list"]
+	path = gnome-defaults-list
+	url = ssh+git://aur@aur4.archlinux.org/gnome-defaults-list.git/
+[submodule "yawls-bzr"]
+	path = yawls-bzr
+	url = ssh+git://aur@aur4.archlinux.org/yawls-bzr.git/
