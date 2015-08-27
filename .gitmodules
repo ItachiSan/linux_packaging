@@ -61,3 +61,6 @@
 [submodule "yawls-bzr"]
 	path = yawls-bzr
 	url = ssh+git://aur@aur.archlinux.org/yawls-bzr.git/
+[submodule "po-debconf"]
+	path = po-debconf
+	url = ssh+git://aur@aur.archlinux.org/po-debconf.git
