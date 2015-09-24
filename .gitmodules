@@ -64,3 +64,6 @@
 [submodule "po-debconf"]
 	path = po-debconf
 	url = ssh+git://aur@aur.archlinux.org/po-debconf.git
+[submodule "skype-desktop-bin"]
+	path = skype-desktop-bin
+	url = ssh+git://aur@aur.archlinux.org/skype-desktop-bin.git
