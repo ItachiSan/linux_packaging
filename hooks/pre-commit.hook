@@ -6,6 +6,7 @@ rm -rf *.pkg.tar.xz *.src.tar.gz
 
 # Specific downloaded files
 rm -rf tsetup*.tar.xz
+rm -rf *.tar.*{,.asc}
 
 # remove backup files
 rm -rf *~
