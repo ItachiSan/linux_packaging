@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 28 Jun 2015 11:53:12 +0200
+Source: dpkg
+Binary: libdpkg-dev dpkg dpkg-dev libdpkg-perl dselect
+Architecture: source
+Version: 1.17.5ubuntu5.5~precise
+Distribution: precise
+Urgency: low
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Giovanni Santini <giovannisantini93@yahoo.it>
+Description: 
+ dpkg       - Debian package management system
+ dpkg-dev   - Debian package development tools
+ dselect    - Debian package management front-end
+ libdpkg-dev - Debian package management static library
+ libdpkg-perl - Dpkg perl modules
+Changes: 
+ dpkg (1.17.5ubuntu5.5~precise) precise; urgency=low
+ .
+   * Backport to precise
+Checksums-Sha1: 
+ 39519989c4b5b5a6988201d36e4d20a34b4ef652 1805 dpkg_1.17.5ubuntu5.5~precise.dsc
+ 0a06976c8d3b4237e0e34b61792d2253a4e134b2 3849104 dpkg_1.17.5ubuntu5.5~precise.tar.xz
+Checksums-Sha256: 
+ 9585eb6eee1006bb3a1b0c31fa0e9eea0cb36fd0e94c3cdb9f1e871562c087f2 1805 dpkg_1.17.5ubuntu5.5~precise.dsc
+ 9a7def2631a536e570d755fa4ddf3214266435e4425a2b7627eb81ea0c51a76c 3849104 dpkg_1.17.5ubuntu5.5~precise.tar.xz
+Files: 
+ b6570b26f6ed926e488104e9c998379b 1805 admin required dpkg_1.17.5ubuntu5.5~precise.dsc
+ 6a6d81da81a259dd07444db45accc205 3849104 admin required dpkg_1.17.5ubuntu5.5~precise.tar.xz
+Original-Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQEcBAEBAgAGBQJWN1iCAAoJEE20cJYvrev1IREH/3CwB19NIIhbihizx+RUCifK
+x0XAh3c7OniCT88PWuFUbEa4FUk42+4q/z+ECs74FLUc49+VsWNhoTZIvE5X4AQv
+KkC30255TK10T+S5uqRLelrH0S31NaKuiwhvFl/IpdAviCR+RwwSf8ZNCT8ZGBR+
+vPTD7eAhR2bt3w0Hnv3/Fr57wF2NQAEAXFqId35GqeBZdL/5Pg7QjUdgpANfOkaI
+v7H/7CS2TzAqC/QsaF53Dbza5gk2O1+49iq3LoGgvIfk7V6RY627ae574nF9Duq3
+z5SXQTevQLixn0ohOfuLBspg8SQumJTUY9yT7MxgmNByQE5RVHRKNzsp7ARZT4o=
+=884M
+-----END PGP SIGNATURE-----

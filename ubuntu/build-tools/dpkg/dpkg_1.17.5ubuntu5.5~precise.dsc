@@ -31,11 +31,11 @@ Original-Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iQEcBAEBAgAGBQJVkZzaAAoJEE20cJYvrev12EkH/2lrDKbuobMu1M78u5JRXzEI
-yroLRVRFYItqQXHg7SeDu7Yk8WPW9LIfovRTFwJwFsV3bboAUSffifZKK8ry9tvz
-aWPx1V8cNRNdkTTlexWshWrLKbw5aAIm3InB1ycGl+pDVooxqWNqTCwOuJS7ugQ9
-4BREqHyLcSAwdrnghUT0rzzqLuav0Nqrkb0qk6QVjVxH0d5VfcmpgiMBduQ/pb1P
-ysnzbfUbE3WSf8nxD20+g15bwImmcaMFBIJHM3vAiLZa6L0EAehsTm2r/pBqHHA5
-l7cQiWHMfbgeMgdhDBMuX958hophvhLkapoKpiYhOCEuXeagDoqaRXU1v9H1+Gc=
-=cVWX
+iQEcBAEBAgAGBQJWN1h8AAoJEE20cJYvrev1Wx8H/i1pjeI44obb8WMI5zVapecb
+LlF7uNVo1aWnp5EHe+3FxbyljqFjDkId6ukQe04al2hJANnzYfcOfyRcVyBWDaZi
+ZrabS0eX+5klHBMMxeO0MW2yv9v5wvFa/jsK9OdF1oTRRq9r8Y2wTt3zdZX11lAt
+s2U71+gVraMJMoj0HqI4soqmNneuAoeXoBTdk+tfn6dc6G8MByiyac/VkBuFQWNG
+HbjcfRWzpfCbmwnHocKOhBJd7fS8nxOhfa1eyRaDU9QTIp8tcf1A75FdOC5KutXT
+3q1FYI5pal8BEGMHW3w6oqzdGCCysqmtO4GnAFLsZauKAFWZ20RSUnVOm1yjjSY=
+=JWLb
 -----END PGP SIGNATURE-----
