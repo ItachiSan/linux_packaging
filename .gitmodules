@@ -67,3 +67,6 @@
 [submodule "skype-desktop-bin"]
 	path = skype-desktop-bin
 	url = ssh+git://aur@aur.archlinux.org/skype-desktop-bin.git
+[submodule "chm2pdf"]
+	path = chm2pdf
+	url = ssh+git://aur@aur.archlinux.org/chm2pdf.git
