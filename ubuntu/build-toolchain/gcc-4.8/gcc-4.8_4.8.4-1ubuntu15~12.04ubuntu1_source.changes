@@ -1,0 +1,228 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 09 Feb 2016 14:38:22 +0100
+Source: gcc-4.8
+Binary: gcc-4.8-base libgcc1 libgcc1-dbg libgcc2 libgcc2-dbg libgcc-4.8-dev libgcc4 libgcc4-dbg lib64gcc1 lib64gcc1-dbg lib64gcc-4.8-dev lib32gcc1 lib32gcc1-dbg lib32gcc-4.8-dev libhfgcc1 libhfgcc1-dbg libhfgcc-4.8-dev libsfgcc1 libsfgcc1-dbg libsfgcc-4.8-dev libn32gcc1 libn32gcc1-dbg libn32gcc-4.8-dev gcc-4.8 gcc-4.8-multilib gcc-4.8-plugin-dev gcc-4.8-hppa64 cpp-4.8 cpp-4.8-doc gcc-4.8-locales g++-4.8 g++-4.8-multilib libgomp1 libgomp1-dbg lib32gomp1 lib32gomp1-dbg lib64gomp1 lib64gomp1-dbg libn32gomp1 libn32gomp1-dbg libhfgomp1 libhfgomp1-dbg libsfgomp1 libsfgomp1-dbg libitm1 libitm1-dbg lib32itm1 lib32itm1-dbg lib64itm1 lib64itm1-dbg libn32itm1 libn32itm1-dbg libhfitm1 libhfitm1-dbg libsfitm1 libsfitm1-dbg libatomic1 libatomic1-dbg lib32atomic1 lib32atomic1-dbg lib64atomic1 lib64atomic1-dbg libn32atomic1 libn32atomic1-dbg libhfatomic1 libhfatomic1-dbg libsfatomic1 libsfatomic1-dbg libasan0 libasan0-dbg lib32asan0 lib32asan0-dbg lib64asan0 lib64asan0-dbg libhfasan0
+ libhfasan0-dbg libsfasan0 libsfasan0-dbg libtsan0 libtsan0-dbg libquadmath0 libquadmath0-dbg lib32quadmath0 lib32quadmath0-dbg lib64quadmath0 lib64quadmath0-dbg libn32quadmath0 libn32quadmath0-dbg libhfquadmath0 libhfquadmath0-dbg libsfquadmath0 libsfquadmath0-dbg gobjc++-4.8 gobjc++-4.8-multilib gobjc-4.8 gobjc-4.8-multilib libobjc-4.8-dev lib64objc-4.8-dev lib32objc-4.8-dev libn32objc-4.8-dev libhfobjc-4.8-dev libsfobjc-4.8-dev libobjc4 libobjc4-dbg lib64objc4 lib64objc4-dbg lib32objc4 lib32objc4-dbg libn32objc4 libn32objc4-dbg libhfobjc4 libhfobjc4-dbg libsfobjc4 libsfobjc4-dbg gfortran-4.8 gfortran-4.8-multilib gfortran-4.8-doc libgfortran-4.8-dev lib64gfortran-4.8-dev lib32gfortran-4.8-dev libn32gfortran-4.8-dev libhfgfortran-4.8-dev libsfgfortran-4.8-dev libgfortran3 libgfortran3-dbg lib64gfortran3 lib64gfortran3-dbg lib32gfortran3 lib32gfortran3-dbg libn32gfortran3 libn32gfortran3-dbg libhfgfortran3 libhfgfortran3-dbg libsfgfortran3 libsfgfortran3-dbg
+ gccgo-4.8 gccgo-4.8-multilib gccgo-4.8-doc libgo4 libgo4-dbg lib64go4 lib64go4-dbg lib32go4 lib32go4-dbg libn32go4 libn32go4-dbg gcj-4.8 gcj-4.8-jdk gcj-4.8-jre-headless gcj-4.8-jre libgcj14 gcj-4.8-jre-lib libgcj14-awt libgcj14-dev libgcj14-dbg gcj-4.8-source libgcj-doc libstdc++6 lib32stdc++6 lib64stdc++6 libn32stdc++6 libhfstdc++6 libsfstdc++6 libstdc++-4.8-dev libstdc++-4.8-pic libstdc++6-4.8-dbg lib32stdc++-4.8-dev lib32stdc++6-4.8-dbg lib64stdc++-4.8-dev lib64stdc++6-4.8-dbg libn32stdc++-4.8-dev libn32stdc++6-4.8-dbg libhfstdc++-4.8-dev libhfstdc++6-4.8-dbg libsfstdc++-4.8-dev libsfstdc++6-4.8-dbg libstdc++-4.8-doc gdc-4.8 libphobos-4.8-dev fixincludes gcc-4.8-doc
+ gcc-4.8-source
+Architecture: source
+Version: 4.8.4-1ubuntu15~12.04ubuntu1
+Distribution: precise
+Urgency: low
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Giovanni Santini <giovannisantini93@yahoo.it>
+Description: 
+ cpp-4.8    - GNU C preprocessor
+ cpp-4.8-doc - Documentation for the GNU C preprocessor (cpp)
+ fixincludes - Fix non-ANSI header files
+ g++-4.8    - GNU C++ compiler
+ g++-4.8-multilib - GNU C++ compiler (multilib files)
+ gcc-4.8    - GNU C compiler
+ gcc-4.8-base - GCC, the GNU Compiler Collection (base package)
+ gcc-4.8-doc - Documentation for the GNU compilers (gcc, gobjc, g++)
+ gcc-4.8-hppa64 - GNU C compiler (cross compiler for hppa64)
+ gcc-4.8-locales - GCC, the GNU compiler collection (native language support files)
+ gcc-4.8-multilib - GNU C compiler (multilib files)
+ gcc-4.8-plugin-dev - Files for GNU GCC plugin development.
+ gcc-4.8-source - Source of the GNU Compiler Collection
+ gccgo-4.8  - GNU Go compiler
+ gccgo-4.8-doc - Documentation for the GNU Go compiler (gccgo)
+ gccgo-4.8-multilib - GNU Go compiler (multilib files)
+ gcj-4.8    - GCJ byte code and native compiler for Java(TM)
+ gcj-4.8-jdk - GCJ and Classpath development tools for Java(TM)
+ gcj-4.8-jre - Java runtime environment using GIJ/Classpath
+ gcj-4.8-jre-headless - Java runtime environment using GIJ/Classpath (headless version)
+ gcj-4.8-jre-lib - Java runtime library for use with gcj (jar files)
+ gcj-4.8-source - GCJ java sources for use in IDEs like eclipse and netbeans
+ gdc-4.8    - GNU D compiler (version 2), based on the GCC backend
+ gfortran-4.8 - GNU Fortran compiler
+ gfortran-4.8-doc - Documentation for the GNU Fortran compiler (gfortran)
+ gfortran-4.8-multilib - GNU Fortran compiler (multilib files)
+ gobjc++-4.8 - GNU Objective-C++ compiler
+ gobjc++-4.8-multilib - GNU Objective-C++ compiler (multilib files)
+ gobjc-4.8  - GNU Objective-C compiler
+ gobjc-4.8-multilib - GNU Objective-C compiler (multilib files)
+ lib32asan0 - AddressSanitizer -- a fast memory error detector (32bit)
+ lib32asan0-dbg - AddressSanitizer -- a fast memory error detector (32 bit debug sy
+ lib32atomic1 - support library providing __atomic built-in functions (32bit)
+ lib32atomic1-dbg - support library providing __atomic built-in functions (32 bit deb
+ lib32gcc-4.8-dev - GCC support library (32 bit development files)
+ lib32gcc1  - GCC support library (32 bit Version)
+ lib32gcc1-dbg - GCC support library (debug symbols)
+ lib32gfortran-4.8-dev - Runtime library for GNU Fortran applications (32bit development f
+ lib32gfortran3 - Runtime library for GNU Fortran applications (32bit)
+ lib32gfortran3-dbg - Runtime library for GNU Fortran applications (32 bit debug symbol
+ lib32go4   - Runtime library for GNU Go applications (32bit)
+ lib32go4-dbg - Runtime library for GNU Go applications (32 bit debug symbols)
+ lib32gomp1 - GCC OpenMP (GOMP) support library (32bit)
+ lib32gomp1-dbg - GCC OpenMP (GOMP) support library (32 bit debug symbols)
+ lib32itm1  - GNU Transactional Memory Library (32bit)
+ lib32itm1-dbg - GNU Transactional Memory Library (32 bit debug symbols)
+ lib32objc-4.8-dev - Runtime library for GNU Objective-C applications (32bit developme
+ lib32objc4 - Runtime library for GNU Objective-C applications (32bit)
+ lib32objc4-dbg - Runtime library for GNU Objective-C applications (32 bit debug sy
+ lib32quadmath0 - GCC Quad-Precision Math Library (32bit)
+ lib32quadmath0-dbg - GCC Quad-Precision Math Library (32 bit debug symbols)
+ lib32stdc++-4.8-dev - GNU Standard C++ Library v3 (development files)
+ lib32stdc++6 - GNU Standard C++ Library v3 (32 bit Version)
+ lib32stdc++6-4.8-dbg - GNU Standard C++ Library v3 (debugging files)
+ lib64asan0 - AddressSanitizer -- a fast memory error detector (64bit)
+ lib64asan0-dbg - AddressSanitizer -- a fast memory error detector (64bit debug sym
+ lib64atomic1 - support library providing __atomic built-in functions (64bit)
+ lib64atomic1-dbg - support library providing __atomic built-in functions (64bit debu
+ lib64gcc-4.8-dev - GCC support library (64bit development files)
+ lib64gcc1  - GCC support library (64bit)
+ lib64gcc1-dbg - GCC support library (debug symbols)
+ lib64gfortran-4.8-dev - Runtime library for GNU Fortran applications (64bit development f
+ lib64gfortran3 - Runtime library for GNU Fortran applications (64bit)
+ lib64gfortran3-dbg - Runtime library for GNU Fortran applications (64bit debug symbols
+ lib64go4   - Runtime library for GNU Go applications (64bit)
+ lib64go4-dbg - Runtime library for GNU Go applications (64bit debug symbols)
+ lib64gomp1 - GCC OpenMP (GOMP) support library (64bit)
+ lib64gomp1-dbg - GCC OpenMP (GOMP) support library (64bit debug symbols)
+ lib64itm1  - GNU Transactional Memory Library (64bit)
+ lib64itm1-dbg - GNU Transactional Memory Library (64bit debug symbols)
+ lib64objc-4.8-dev - Runtime library for GNU Objective-C applications (64bit developme
+ lib64objc4 - Runtime library for GNU Objective-C applications (64bit)
+ lib64objc4-dbg - Runtime library for GNU Objective-C applications (64 bit debug sy
+ lib64quadmath0 - GCC Quad-Precision Math Library  (64bit)
+ lib64quadmath0-dbg - GCC Quad-Precision Math Library  (64bit debug symbols)
+ lib64stdc++-4.8-dev - GNU Standard C++ Library v3 (development files)
+ lib64stdc++6 - GNU Standard C++ Library v3 (64bit)
+ lib64stdc++6-4.8-dbg - GNU Standard C++ Library v3 (debugging files)
+ libasan0   - AddressSanitizer -- a fast memory error detector
+ libasan0-dbg - AddressSanitizer -- a fast memory error detector (debug symbols)
+ libatomic1 - support library providing __atomic built-in functions
+ libatomic1-dbg - support library providing __atomic built-in functions (debug symb
+ libgcc-4.8-dev - GCC support library (development files)
+ libgcc1    - GCC support library
+ libgcc1-dbg - GCC support library (debug symbols)
+ libgcc2    - GCC support library
+ libgcc2-dbg - GCC support library (debug symbols)
+ libgcc4    - GCC support library
+ libgcc4-dbg - GCC support library (debug symbols)
+ libgcj-doc - libgcj API documentation and example programs
+ libgcj14   - Java runtime library for use with gcj
+ libgcj14-awt - AWT peer runtime libraries for use with gcj
+ libgcj14-dbg - Debugging symbols for libraries provided in libgcj14-dev
+ libgcj14-dev - Java development headers for use with gcj
+ libgfortran-4.8-dev - Runtime library for GNU Fortran applications (development files)
+ libgfortran3 - Runtime library for GNU Fortran applications
+ libgfortran3-dbg - Runtime library for GNU Fortran applications (debug symbols)
+ libgo4     - Runtime library for GNU Go applications
+ libgo4-dbg - Runtime library for GNU Go applications (debug symbols)
+ libgomp1   - GCC OpenMP (GOMP) support library
+ libgomp1-dbg - GCC OpenMP (GOMP) support library (debug symbols)
+ libhfasan0 - AddressSanitizer -- a fast memory error detector (hard float ABI)
+ libhfasan0-dbg - AddressSanitizer -- a fast memory error detector (hard float ABI
+ libhfatomic1 - support library providing __atomic built-in functions (hard float
+ libhfatomic1-dbg - support library providing __atomic built-in functions (hard float
+ libhfgcc-4.8-dev - GCC support library (hard float ABI development files)
+ libhfgcc1  - GCC support library (hard float ABI)
+ libhfgcc1-dbg - GCC support library (debug symbols)
+ libhfgfortran-4.8-dev - Runtime library for GNU Fortran applications (hard float ABI deve
+ libhfgfortran3 - Runtime library for GNU Fortran applications (hard float ABI)
+ libhfgfortran3-dbg - Runtime library for GNU Fortran applications (hard float ABI debu
+ libhfgomp1 - GCC OpenMP (GOMP) support library (hard float ABI)
+ libhfgomp1-dbg - GCC OpenMP (GOMP) support library (hard float ABI debug symbols)
+ libhfitm1  - GNU Transactional Memory Library (hard float ABI)
+ libhfitm1-dbg - GNU Transactional Memory Library (hard float ABI debug symbols)
+ libhfobjc-4.8-dev - Runtime library for GNU Objective-C applications (hard float ABI
+ libhfobjc4 - Runtime library for GNU Objective-C applications (hard float ABI)
+ libhfobjc4-dbg - Runtime library for GNU Objective-C applications (hard float ABI
+ libhfquadmath0 - GCC Quad-Precision Math Library (hard float ABI)
+ libhfquadmath0-dbg - GCC Quad-Precision Math Library (hard float ABI debug symbols)
+ libhfstdc++-4.8-dev - GNU Standard C++ Library v3 (development files)
+ libhfstdc++6 - GNU Standard C++ Library v3 (hard float ABI)
+ libhfstdc++6-4.8-dbg - GNU Standard C++ Library v3 (debugging files)
+ libitm1    - GNU Transactional Memory Library
+ libitm1-dbg - GNU Transactional Memory Library (debug symbols)
+ libn32atomic1 - support library providing __atomic built-in functions (n32)
+ libn32atomic1-dbg - support library providing __atomic built-in functions (n32 debug
+ libn32gcc-4.8-dev - GCC support library (n32 development files)
+ libn32gcc1 - GCC support library (n32)
+ libn32gcc1-dbg - GCC support library (debug symbols)
+ libn32gfortran-4.8-dev - Runtime library for GNU Fortran applications (n32 development fil
+ libn32gfortran3 - Runtime library for GNU Fortran applications (n32)
+ libn32gfortran3-dbg - Runtime library for GNU Fortran applications (n32 debug symbols)
+ libn32go4  - Runtime library for GNU Go applications (n32)
+ libn32go4-dbg - Runtime library for GNU Go applications (n32 debug symbols)
+ libn32gomp1 - GCC OpenMP (GOMP) support library (n32)
+ libn32gomp1-dbg - GCC OpenMP (GOMP) support library (n32 debug symbols)
+ libn32itm1 - GNU Transactional Memory Library (n32)
+ libn32itm1-dbg - GNU Transactional Memory Library (n32 debug symbols)
+ libn32objc-4.8-dev - Runtime library for GNU Objective-C applications (n32 development
+ libn32objc4 - Runtime library for GNU Objective-C applications (n32)
+ libn32objc4-dbg - Runtime library for GNU Objective-C applications (n32 debug symbo
+ libn32quadmath0 - GCC Quad-Precision Math Library (n32)
+ libn32quadmath0-dbg - GCC Quad-Precision Math Library (n32 debug symbols)
+ libn32stdc++-4.8-dev - GNU Standard C++ Library v3 (development files)
+ libn32stdc++6 - GNU Standard C++ Library v3 (n32)
+ libn32stdc++6-4.8-dbg - GNU Standard C++ Library v3 (debugging files)
+ libobjc-4.8-dev - Runtime library for GNU Objective-C applications (development fil
+ libobjc4   - Runtime library for GNU Objective-C applications
+ libobjc4-dbg - Runtime library for GNU Objective-C applications (debug symbols)
+ libphobos-4.8-dev - Phobos D standard library
+ libquadmath0 - GCC Quad-Precision Math Library
+ libquadmath0-dbg - GCC Quad-Precision Math Library (debug symbols)
+ libsfasan0 - AddressSanitizer -- a fast memory error detector (soft float ABI)
+ libsfasan0-dbg - AddressSanitizer -- a fast memory error detector (soft float ABI
+ libsfatomic1 - support library providing __atomic built-in functions (soft float
+ libsfatomic1-dbg - support library providing __atomic built-in functions (soft float
+ libsfgcc-4.8-dev - GCC support library (soft float ABI development files)
+ libsfgcc1  - GCC support library (soft float ABI)
+ libsfgcc1-dbg - GCC support library (debug symbols)
+ libsfgfortran-4.8-dev - Runtime library for GNU Fortran applications (soft float ABI deve
+ libsfgfortran3 - Runtime library for GNU Fortran applications (soft float ABI)
+ libsfgfortran3-dbg - Runtime library for GNU Fortran applications (hard float ABI debu
+ libsfgomp1 - GCC OpenMP (GOMP) support library (soft float ABI)
+ libsfgomp1-dbg - GCC OpenMP (GOMP) support library (soft float ABI debug symbols)
+ libsfitm1  - GNU Transactional Memory Library (soft float ABI)
+ libsfitm1-dbg - GNU Transactional Memory Library (soft float ABI debug symbols)
+ libsfobjc-4.8-dev - Runtime library for GNU Objective-C applications (soft float deve
+ libsfobjc4 - Runtime library for GNU Objective-C applications (soft float ABI)
+ libsfobjc4-dbg - Runtime library for GNU Objective-C applications (soft float ABI
+ libsfquadmath0 - GCC Quad-Precision Math Library (soft float ABI)
+ libsfquadmath0-dbg - GCC Quad-Precision Math Library (hard float ABI debug symbols)
+ libsfstdc++-4.8-dev - GNU Standard C++ Library v3 (development files)
+ libsfstdc++6 - GNU Standard C++ Library v3 (soft float ABI)
+ libsfstdc++6-4.8-dbg - GNU Standard C++ Library v3 (debugging files)
+ libstdc++-4.8-dev - GNU Standard C++ Library v3 (development files)
+ libstdc++-4.8-doc - GNU Standard C++ Library v3 (documentation files)
+ libstdc++-4.8-pic - GNU Standard C++ Library v3 (shared library subset kit)
+ libstdc++6 - GNU Standard C++ Library v3
+ libstdc++6-4.8-dbg - GNU Standard C++ Library v3 (debugging files)
+ libtsan0   - ThreadSanitizer -- a Valgrind-based detector of data races (runti
+ libtsan0-dbg - ThreadSanitizer -- a Valgrind-based detector of data races (debug
+Changes: 
+ gcc-4.8 (4.8.4-1ubuntu15~12.04ubuntu1) precise; urgency=low
+ .
+   * Upload to my personal PPA (no changes).
+Checksums-Sha1: 
+ 056843d1994af16a53a5dc12e93f32d6c457381c 12775 gcc-4.8_4.8.4-1ubuntu15~12.04ubuntu1.dsc
+ bc68632d1d7235a1239cccdd3d749bd9523319ef 66451474 gcc-4.8_4.8.4.orig.tar.gz
+ 884368584a92f6d38513210d3ee128c4e3fc3b37 1073625 gcc-4.8_4.8.4-1ubuntu15~12.04ubuntu1.diff.gz
+Checksums-Sha256: 
+ c56f556b650273ddbfde703848706a08ace597622f93e6353cd5e0a04b13dc82 12775 gcc-4.8_4.8.4-1ubuntu15~12.04ubuntu1.dsc
+ 0a714dd7a8415cb134c79784ff8b0a30da6d76afb998c21f6e95e1060d65466c 66451474 gcc-4.8_4.8.4.orig.tar.gz
+ 5aed8ba9f19080484917b8321555d36cf7d10091e1d88600fdc476231bd21874 1073625 gcc-4.8_4.8.4-1ubuntu15~12.04ubuntu1.diff.gz
+Files: 
+ aba39a6107d965712f6896d80d05b2e5 12775 devel optional gcc-4.8_4.8.4-1ubuntu15~12.04ubuntu1.dsc
+ 414eb2d13bb1ae06c0e710f604479960 66451474 devel optional gcc-4.8_4.8.4.orig.tar.gz
+ 1b004201396a386bd927a10f3a18ce17 1073625 devel optional gcc-4.8_4.8.4-1ubuntu15~12.04ubuntu1.diff.gz
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQEcBAEBAgAGBQJWuewLAAoJEE20cJYvrev1v+UIAIpZ/Drl472d3aOMsAsQdaEG
+u131MmS3jDXAK5XW9MEGLRmD1SvVFB2o7bySnd+AknsENbH/dL64yQXk3/0v1XOA
+97mpemfiQ5bzVRaeTRhoAskAaovAkMteaLyORQatXGFTv8i5c02sQub9xPJ6arIT
+rTZK514p5DzTsHC6wDc3A874VuLCTrpRWxRI7uF5n28BiaiBu0e4XQnZxBc0OUSm
+eVcrJZEbg6XmI/8a6xHMJhYXsi5cCc0bTDyqI9mMAs0bPc6R7Rexvz6pwxVfKwf0
+TeZ11laArmTQ7KLyqmAWZ1VzA1x4ya0sqM66P/P9Qoav2vu8TeMbXL+ZICs/pog=
+=O/zQ
+-----END PGP SIGNATURE-----

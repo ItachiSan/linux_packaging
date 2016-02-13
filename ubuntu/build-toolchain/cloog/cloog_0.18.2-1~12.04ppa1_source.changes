@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 09 Feb 2016 09:19:05 +0100
+Source: cloog
+Binary: libcloog-isl-dev libcloog-isl4 cloog-isl
+Architecture: source
+Version: 0.18.2-1~12.04ppa1
+Distribution: precise
+Urgency: low
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Changed-By: Giovanni Santini <giovannisantini93@yahoo.it>
+Description: 
+ cloog-isl  - Chunky Loop Generator (runtime library)
+ libcloog-isl-dev - Chunky Loop Generator (development files)
+ libcloog-isl4 - Chunky Loop Generator (runtime library)
+Changes: 
+ cloog (0.18.2-1~12.04ppa1) precise; urgency=low
+ .
+   * Upload to my personal PPA (no changes).
+Checksums-Sha1: 
+ 5c586d08aec56a392efe92660f5dcc1c4a48ca4c 1648 cloog_0.18.2-1~12.04ppa1.dsc
+ 8a24165541ab25be6f2e4d907f4d711d73ad090f 2376691 cloog_0.18.2.orig.tar.gz
+ cbd164eefa7b985a790bd821014c61b0e03dfc73 8373 cloog_0.18.2-1~12.04ppa1.debian.tar.gz
+Checksums-Sha256: 
+ a88d091de9d832676d6d40295fa73d8a6a954bb5932721f74e532495f31e638c 1648 cloog_0.18.2-1~12.04ppa1.dsc
+ ba3cc2d3750dfcb51f65ce029f0dda31347b8eeed216b1bac6170ab12d967581 2376691 cloog_0.18.2.orig.tar.gz
+ 5920f4f6e9034eacf94d441d77311d95f132c55dad674bb14ce9aaf6d5620f99 8373 cloog_0.18.2-1~12.04ppa1.debian.tar.gz
+Files: 
+ 7544dbcf23141447ccaba82067327970 1648 libs optional cloog_0.18.2-1~12.04ppa1.dsc
+ 69116aa6cd5e73f6b688d871875e1292 2376691 libs optional cloog_0.18.2.orig.tar.gz
+ 47c6ca9da7ec75fb1a82feec709e3793 8373 libs optional cloog_0.18.2-1~12.04ppa1.debian.tar.gz
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQEcBAEBAgAGBQJWuaEaAAoJEE20cJYvrev1MVUH/1KoA/+1AdN8EgUG2vWg3Lgo
+PjBXhLQHUPYIvqwQemgZ12qLNWXZcsjCkascvm818K/bBRgyfvH4LS7SBKCPMn6s
+y2F9BBzJvftBiTEsh3ykF9qIq19ebxBlNu510vLkRrPKNeljyzbueIxNSLLz3sGk
+LsYXVRfNhVpnosN80S9/qZi1BcGVBXZITDkfIeQVpAvZMxMGb+fXXxeUiafxJ3jz
+Sy101pUvyW8P75HxKBCcvpuGgXcIce0/2gtLKYp33ar7OLA8BiUSGYy1TGzOnzvK
+cSNFPWWX/EYNm1xyolD/BEP+emuVAqmAzJgQvbvhmaasbVw93NpOer8Bk69BBpE=
+=2mi3
+-----END PGP SIGNATURE-----
