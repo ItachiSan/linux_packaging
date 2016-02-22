@@ -1,1 +1,0 @@
-Same as other, but I had to replace 'libgnutls28-dev' build dependency with 'libgnutls-dev'

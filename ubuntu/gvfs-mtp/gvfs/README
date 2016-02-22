@@ -1,7 +1,0 @@
-Original package:
-https://launchpad.net/~langdalepl/+archive/ubuntu/gvfs-mtp/+packages
-
-Took 'precise' gvfs sources and added the patches here:
-http://launchpadlibrarian.net/205056740/gvfs_1.12.1-0ubuntu1.2_1.12.1-0ubuntu1.3.diff.gz
-
-So MTP backend works fine.
