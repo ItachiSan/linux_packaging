@@ -5,6 +5,7 @@ rm -rf src/ pkg/
 rm -rf *.pkg.tar.xz *.src.tar.gz
 
 # Specific downloaded files
+rm -rf *.deb
 rm -rf tsetup*.tar.xz
 rm -rf *.tar.*{,.asc}
 
