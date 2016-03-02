@@ -70,3 +70,6 @@
 [submodule "chm2pdf"]
 	path = chm2pdf
 	url = ssh+git://aur@aur.archlinux.org/chm2pdf.git
+[submodule "popcorntime"]
+	path = popcorntime
+	url = ssh+git://aur@aur.archlinux.org/popcorntime.git
