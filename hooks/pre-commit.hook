@@ -3,6 +3,7 @@
 # remove build artifacts
 rm -rf src/ pkg/
 rm -rf *.pkg.tar.xz *.src.tar.gz
+rm -rf *.log
 
 # Specific downloaded files
 rm -rf *.deb
