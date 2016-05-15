@@ -9,6 +9,7 @@ rm -rf *.log
 rm -rf *.deb
 rm -rf tsetup*.tar.xz
 rm -rf *.tar.*{,.asc}
+rm -rf icon*.png
 
 # remove backup files
 rm -rf *~
