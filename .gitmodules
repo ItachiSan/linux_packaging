@@ -79,3 +79,9 @@
 [submodule "telegram-desktop-dev"]
 	path = telegram-desktop-dev
 	url = git+ssh://aur@aur.archlinux.org/telegram-desktop-dev.git
+[submodule "telegram-qt-git"]
+	path = telegram-qt-git
+	url = git+ssh://aur@aur.archlinux.org/telegram-qt-git.git
+[submodule "telepathy-morse-git"]
+	path = telepathy-morse-git
+	url = git+ssh://aur@aur.archlinux.org/telepathy-morse-git.git
