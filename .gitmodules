@@ -85,3 +85,6 @@
 [submodule "telepathy-morse-git"]
 	path = telepathy-morse-git
 	url = git+ssh://aur@aur.archlinux.org/telepathy-morse-git.git
+[submodule "obs-service-tar_scm-git"]
+	path = obs-service-tar_scm-git
+	url = ssh+git://aur@aur.archlinux.org/obs-service-tar_scm-git.git
