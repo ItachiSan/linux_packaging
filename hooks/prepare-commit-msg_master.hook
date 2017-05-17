@@ -1,0 +1,31 @@
+#!/bin/sh
+# A stupid script that gets the updated git modules (in our case, packages)
+# and set the first commit message line telling them.
+# Other lines (from the 2nd to the bottom) are kept as in the original one.
+
+# Get the last useful line
+line_limit=$(cat "${1}" | grep -n 'not staged' | cut -d: -f1)
+
+# Get the useful lines with updated packages and make them one-line
+packages=$(cat "${1}" | head -n $line_limit | grep 'modified' | cut -d: -f2 | sed 's/\s\+//' | tr '\n' ' ')
+packages_number=$(cat "${1}" | head -n $line_limit | grep -c 'modified')
+
+# Store the old commit message
+old_commit_message_start="$(cat ${1}| grep -n '^#' -m 1 | cut -d: -f1)"
+old_commit_message="$(cat ${1} | tail -n +$old_commit_message_start)"
+
+# Format the message properly
+echo -e "updpkg: $packages" > "${1}"
+# Add information related to this package
+echo -e "Log from the packages:" >> "${1}"
+hooks_dir="$(readlink -f ${0} | xargs dirname)"
+cd "$hooks_dir/../.."
+repo_dir="$(pwd)"
+for p in $packages
+do
+    cd "$repo_dir/$p"
+    git log -1 | tail -n +5 | sed 's/^\s\+/ /' >> "$repo_dir/${1}"
+    echo -e "" >> "$repo_dir/${1}"
+    cd -
+done
+echo -e "$old_commit_message" >> "${1}"
