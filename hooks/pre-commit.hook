@@ -1,18 +1,7 @@
 #!/bin/bash
 
-# remove build artifacts
-rm -rf src/ pkg/
-rm -rf *.pkg.tar.xz *.src.tar.gz
-rm -rf *.log
-
-# Specific downloaded files
-rm -rf *.deb
-rm -rf tsetup*.tar.xz
-rm -rf *.tar.*{,.asc}
-rm -rf icon*.png
-
-# remove backup files
-rm -rf *~
+# Nuke all not-committed files
+git clean -df
 
 # nuke extraneous whitespace from orbit
 if git rev-parse --verify HEAD >/dev/null 2>&1
