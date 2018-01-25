@@ -16,5 +16,5 @@ git diff-index --check --cached $against -- 1>&2
 
 # make sure .SRCINFO is up to date
 echo -e "Generating and adding .SRCINFO"
-mksrcinfo
+makepkg --printsrcinfo > .SRCINFO
 git add .SRCINFO

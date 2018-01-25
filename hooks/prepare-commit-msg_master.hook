@@ -7,7 +7,7 @@
 line_limit=$(cat "${1}" | grep -n 'not staged' | cut -d: -f1)
 
 # Get the useful lines with updated packages and make them one-line
-packages=$(cat "${1}" | head -n $line_limit | grep 'modified' | cut -d: -f2 | sed 's/\s\+//' | tr '\n' ' ')
+packages=$(cat "${1}" | head -n $line_limit | grep 'modified' | cut -d: -f2 | sed -e 's/\s\+//' -e 's/hooks\/[a-z -_]\+.hook//g' | tr '\n' ' ')
 packages_number=$(cat "${1}" | head -n $line_limit | grep -c 'modified')
 
 # Store the old commit message
@@ -26,6 +26,6 @@ do
     cd "$repo_dir/$p"
     git log -1 | tail -n +5 | sed 's/^\s\+/ /' >> "$repo_dir/${1}"
     echo -e "" >> "$repo_dir/${1}"
-    cd -
+    cd - > /dev/null
 done
 echo -e "$old_commit_message" >> "${1}"
