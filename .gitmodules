@@ -91,3 +91,6 @@
 [submodule "webkit2gtk-mse"]
 	path = webkit2gtk-mse
 	url = ssh://aur@aur.archlinux.org/webkit2gtk-mse.git
+[submodule "gdm3setup"]
+	path = gdm3setup
+	url = ssh://aur@aur.archlinux.org/gdm3setup.git
