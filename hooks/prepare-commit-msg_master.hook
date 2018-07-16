@@ -7,8 +7,9 @@
 line_limit=$(cat "${1}" | grep -n 'not staged' | cut -d: -f1)
 
 # Get the useful lines with updated packages and make them one-line
-packages=$(cat "${1}" | head -n $line_limit | grep 'modified' | cut -d: -f2 | sed -e 's/\s\+//' -e 's/hooks\/[a-z -_]\+.hook//g' | tr '\n' ' ')
-packages_number=$(cat "${1}" | head -n $line_limit | grep -c 'modified')
+#packages=$(cat "${1}" | head -n $line_limit | grep 'modified' | cut -d: -f2 | sed -e 's/\s\+//' -e 's/hooks\/[a-z -_]\+.hook//g' | tr '\n' ' ')
+packages=$(cat "${1}" | grep 'modified' | cut -d: -f2 | sed -e 's/\s\+//' -e 's/hooks\/[a-z -_]\+.hook//g' | tr '\n' ' ')
+#packages_number=$(cat "${1}" | head -n $line_limit | grep -c 'modified')
 
 # Store the old commit message
 old_commit_message_start="$(cat ${1}| grep -n '^#' -m 1 | cut -d: -f1)"
