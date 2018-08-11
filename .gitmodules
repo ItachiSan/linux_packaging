@@ -94,3 +94,6 @@
 [submodule "gdm3setup"]
 	path = gdm3setup
 	url = ssh://aur@aur.archlinux.org/gdm3setup.git
+[submodule "epiphany-mse"]
+	path = epiphany-mse
+	url = ssh://aur@aur.archlinux.org/epiphany-mse.git
