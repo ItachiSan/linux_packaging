@@ -22,7 +22,7 @@ echo "Adding master repository hooks..."
 cd $work_dir
 for hook in `ls -1 *.hook | grep _master`
 do
-    ln -sf $OPTS "$(pwd)/${hook}" "../.git/hooks/${hook%.hook}"
+    ln -svf $OPTS "$(pwd)/${hook}" "../.git/hooks/${hook%_master.hook}"
 done
 
 cd $old_dir

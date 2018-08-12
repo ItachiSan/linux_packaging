@@ -3,30 +3,86 @@
 # and set the first commit message line telling them.
 # Other lines (from the 2nd to the bottom) are kept as in the original one.
 
+# For debugging
+#set -x
+
+# Store the previous commit for our work
+commit_file=`readlink -f ${1}`
+old_commit_text=`cat "$commit_file"`
+
+# Where are we?
+hooks_dir="$(readlink -f ${0} | xargs dirname)"
+pushd "$hooks_dir/.." > /dev/null
+repo_dir="$PWD"
+
 # Get the last useful line
-line_limit=$(cat "${1}" | grep -n 'not staged' | cut -d: -f1)
+line_limit=`echo -e "$old_commit_text" |
+    grep -n 'not staged\|Untracked' -m 1 |
+    cut -d: -f1`
 
 # Get the useful lines with updated packages and make them one-line
-#packages=$(cat "${1}" | head -n $line_limit | grep 'modified' | cut -d: -f2 | sed -e 's/\s\+//' -e 's/hooks\/[a-z -_]\+.hook//g' | tr '\n' ' ')
-packages=$(cat "${1}" | grep 'modified' | cut -d: -f2 | sed -e 's/\s\+//' -e 's/hooks\/[a-z -_.]\+//' | tr '\n' ' ')
-#packages_number=$(cat "${1}" | head -n $line_limit | grep -c 'modified')
+packages=`echo -e "$old_commit_text" |
+    head -n $line_limit |
+    grep 'modified' |
+    cut -d: -f2 |
+    sed -e 's/\s\+//' \
+        -e 's/hooks\/[a-z -_.]\+//' \
+        -e 's/(.*//' |
+    tr '\n' ' '`
+
+hooks=`echo -e "$old_commit_text" |
+    head -n $line_limit |
+    grep 'modified' |
+    cut -d: -f2 |
+    grep 'hooks' |
+    sed -e 's/\s\+//' \
+        -e 's/(.*//' |
+    tr '\n' ' '`
+
+echo "Packages: $packages"
+echo "Hooks:    $hooks"
 
 # Store the old commit message
-old_commit_message_start="$(cat ${1}| grep -n '^#' -m 1 | cut -d: -f1)"
-old_commit_message="$(cat ${1} | tail -n +$old_commit_message_start)"
+old_commit_message_start=`echo -e "$old_commit_text" |
+    grep -n '^#' -m 1 |
+    cut -d: -f1`
+
+old_commit_message=`echo -e "$old_commit_text" |
+    tail -n +$old_commit_message_start `
 
 # Format the message properly
-echo -e "updpkg: $packages" > "${1}"
+rm    $commit_file
+touch $commit_file
+[ -n "$packages" ] && echo -e "updpkg:   $packages" >> "$commit_file"
+[ -n "$hooks"    ] && echo -e "updhooks: $hooks" >> "$commit_file"
+
 # Add information related to this package
-echo -e "Log from the packages:" >> "${1}"
-hooks_dir="$(readlink -f ${0} | xargs dirname)"
-cd "$hooks_dir/../.."
-repo_dir="$(pwd)"
+[ -n "$packages" ] && echo -e "Log from the packages:" >> "$commit_file"
 for p in $packages
 do
-    cd "$repo_dir/$p"
-    git log -1 | tail -n +5 | sed 's/^\s\+/ /' >> "$repo_dir/${1}"
-    echo -e "" >> "$repo_dir/${1}"
-    cd - > /dev/null
+    # Skip things that are not Git repositories.
+    if [ ! -d $p -a ! -e "$p/.git" ]; then
+        echo "Skipping $p ..."
+        continue
+    fi
+
+    # Get the last log info from the repository
+    pushd "$repo_dir/$p" > /dev/null
+    git log -1 | tail -n +5 | sed 's/^\s\+/ /' >> "$commit_file"
+    echo -e "" >> "$commit_file"
+    popd > /dev/null
 done
-echo -e "$old_commit_message" >> "${1}"
+
+# Add information related to the hooks
+[ -n "$hooks"    ] && echo -e "Hooks updates:" >> "$commit_file"
+
+for h in $hooks
+do
+    echo -e " - $h:" >> "$commit_file"
+done
+
+# Store the text we manipulated
+echo -e "$old_commit_message" >> "$commit_file"
+
+# Back to the previous directory
+popd > /dev/null
