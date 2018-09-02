@@ -97,3 +97,6 @@
 [submodule "epiphany-mse"]
 	path = epiphany-mse
 	url = ssh://aur@aur.archlinux.org/epiphany-mse.git
+[submodule "gecode"]
+	path = gecode
+	url = ssh+git://aur@aur.archlinux.org/gecode.git
