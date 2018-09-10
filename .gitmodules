@@ -97,3 +97,9 @@
 [submodule "gecode"]
 	path = gecode
 	url = ssh+git://aur@aur.archlinux.org/gecode.git
+[submodule "cockatrice-client"]
+	path = cockatrice-client
+	url = ssh://aur@aur.archlinux.org/cockatrice-client.git
+[submodule "nodejs-localtunnel"]
+	path = nodejs-localtunnel
+	url = ssh://aur@aur.archlinux.org/nodejs-localtunnel.git
