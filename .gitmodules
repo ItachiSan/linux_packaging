@@ -73,9 +73,6 @@
 [submodule "popcorntime"]
 	path = popcorntime
 	url = ssh+git://aur@aur.archlinux.org/popcorntime.git
-[submodule "telegram-desktop-light"]
-	path = telegram-desktop-light
-	url = ssh+git://aur@aur.archlinux.org/telegram-desktop-light.git
 [submodule "telegram-desktop-dev"]
 	path = telegram-desktop-dev
 	url = git+ssh://aur@aur.archlinux.org/telegram-desktop-dev.git
