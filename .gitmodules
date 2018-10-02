@@ -103,3 +103,6 @@
 [submodule "nodejs-localtunnel"]
 	path = nodejs-localtunnel
 	url = ssh://aur@aur.archlinux.org/nodejs-localtunnel.git
+[submodule "dsplight"]
+	path = dsplight
+	url = ssh://aur@aur.archlinux.org/dsplight.git
