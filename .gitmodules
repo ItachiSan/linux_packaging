@@ -106,3 +106,6 @@
 [submodule "dsplight"]
 	path = dsplight
 	url = ssh://aur@aur.archlinux.org/dsplight.git
+[submodule "postman"]
+	path = postman
+	url = ssh://aur@aur.archlinux.org/postman.git
