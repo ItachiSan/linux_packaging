@@ -109,3 +109,6 @@
 [submodule "postman"]
 	path = postman
 	url = ssh://aur@aur.archlinux.org/postman.git
+[submodule "franz"]
+	path = franz
+	url = ssh://aur@aur.archlinux.org/franz.git
