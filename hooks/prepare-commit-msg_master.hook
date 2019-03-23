@@ -17,13 +17,13 @@ repo_dir="$PWD"
 
 # Get the last useful line
 line_limit=`echo -e "$old_commit_text" |
-    grep -n 'not staged\|Untracked' -m 1 |
+    grep -n 'stag\|trac' -m 1 |
     cut -d: -f1`
 
 # Get the useful lines with updated packages and make them one-line
 packages=`echo -e "$old_commit_text" |
     head -n $line_limit |
-    grep 'modified' |
+    grep 'modified\|modificato' |
     cut -d: -f2 |
     sed -e 's/\s\+//' \
         -e 's/hooks\/[a-z -_.]\+//' \
@@ -32,7 +32,7 @@ packages=`echo -e "$old_commit_text" |
 
 hooks=`echo -e "$old_commit_text" |
     head -n $line_limit |
-    grep 'modified' |
+    grep 'modif' |
     cut -d: -f2 |
     grep 'hooks' |
     sed -e 's/\s\+//' \
