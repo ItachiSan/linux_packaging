@@ -54,10 +54,10 @@ old_commit_message=`echo -e "$old_commit_text" |
 rm    $commit_file
 touch $commit_file
 [ -n "$packages" ] && echo -e "updpkg:   $packages" >> "$commit_file"
-[ -n "$hooks"    ] && echo -e "updhooks: $hooks" >> "$commit_file"
+[ -n "$hooks"    ] && echo -e "updhooks: ${hooks//hooks\//}" >> "$commit_file"
 
 # Add information related to this package
-[ -n "$packages" ] && echo -e "Log from the packages:" >> "$commit_file"
+[ -n "$packages" ] && echo -e "\nLog from the packages:\n" >> "$commit_file"
 for p in $packages
 do
     # Skip things that are not Git repositories.
@@ -68,7 +68,7 @@ do
 
     # Get the last log info from the repository
     pushd "$repo_dir/$p" > /dev/null
-    git log -1 | tail -n +5 | sed 's/^\s\+/ /' >> "$commit_file"
+    git log -1 | tail -n +5 | sed '/^\s\+$/d ; s/^\s\+/ /' >> "$commit_file"
     echo -e "" >> "$commit_file"
     popd > /dev/null
 done
