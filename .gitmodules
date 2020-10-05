@@ -1,51 +1,15 @@
-[submodule "jdk6"]
-	path = jdk6
-	url = git+ssh://aur@aur.archlinux.org/jdk6.git
-[submodule "make-3.81"]
-	path = make-3.81
-	url = git+ssh://aur@aur.archlinux.org/make-3.81.git
 [submodule "minecraftsp-anjocaido"]
 	path = minecraftsp-anjocaido
 	url = git+ssh://aur@aur.archlinux.org/minecraftsp-anjocaido.git
 [submodule "repacman"]
 	path = repacman
 	url = git+ssh://aur@aur.archlinux.org/repacman.git
-[submodule "gcc44-multilib"]
-	path = gcc44-multilib
-	url = git+ssh://aur@aur.archlinux.org/gcc44-multilib.git
 [submodule "telegram-desktop-bin"]
 	path = telegram-desktop-bin
 	url = git+ssh://aur@aur.archlinux.org/telegram-desktop-bin.git
-[submodule "bzr-builder"]
-	path = bzr-builder
-	url = git+ssh://aur@aur.archlinux.org/bzr-builder.git
-[submodule "bzr-builder-bzr"]
-	path = bzr-builder-bzr
-	url = git+ssh://aur@aur.archlinux.org/bzr-builder-bzr.git
 [submodule "devscripts"]
 	path = devscripts
 	url = git+ssh://aur@aur.archlinux.org/devscripts.git
-[submodule "calise-git"]
-	path = calise-git
-	url = git+ssh://aur@aur.archlinux.org/calise-git.git
-[submodule "calise"]
-	path = calise
-	url = git+ssh://aur@aur.archlinux.org/calise.git
-[submodule "opencv-java"]
-	path = opencv-java
-	url = git+ssh://aur@aur.archlinux.org/opencv-java.git
-[submodule "java-gnome"]
-	path = java-gnome
-	url = git+ssh://aur@aur.archlinux.org/java-gnome.git
-[submodule "gettext-java"]
-	path = gettext-java
-	url = git+ssh://aur@aur.archlinux.org/gettext-java.git
-[submodule "yawls"]
-	path = yawls
-	url = git+ssh://aur@aur.archlinux.org/yawls.git
-[submodule "eoloapp"]
-	path = eoloapp
-	url = git+ssh://aur@aur.archlinux.org/eoloapp.git
 [submodule "telegram-desktop-bin-dev"]
 	path = telegram-desktop-bin-dev
 	url = git+ssh://aur@aur.archlinux.org/telegram-desktop-bin-dev.git
@@ -58,18 +22,6 @@
 [submodule "gnome-defaults-list"]
 	path = gnome-defaults-list
 	url = git+ssh://aur@aur.archlinux.org/gnome-defaults-list.git
-[submodule "yawls-bzr"]
-	path = yawls-bzr
-	url = git+ssh://aur@aur.archlinux.org/yawls-bzr.git
-[submodule "po-debconf"]
-	path = po-debconf
-	url = git+ssh://aur@aur.archlinux.org/po-debconf.git
-[submodule "skype-desktop-bin"]
-	path = skype-desktop-bin
-	url = git+ssh://aur@aur.archlinux.org/skype-desktop-bin.git
-[submodule "chm2pdf"]
-	path = chm2pdf
-	url = git+ssh://aur@aur.archlinux.org/chm2pdf.git
 [submodule "popcorntime"]
 	path = popcorntime
 	url = git+ssh://aur@aur.archlinux.org/popcorntime.git
@@ -85,30 +37,12 @@
 [submodule "obs-service-tar_scm-git"]
 	path = obs-service-tar_scm-git
 	url = git+ssh://aur@aur.archlinux.org/obs-service-tar_scm-git.git
-[submodule "webkit2gtk-mse"]
-	path = webkit2gtk-mse
-	url = git+ssh://aur@aur.archlinux.org/webkit2gtk-mse.git
-[submodule "gdm3setup"]
-	path = gdm3setup
-	url = git+ssh://aur@aur.archlinux.org/gdm3setup.git
-[submodule "epiphany-mse"]
-	path = epiphany-mse
-	url = git+ssh://aur@aur.archlinux.org/epiphany-mse.git
 [submodule "gecode"]
 	path = gecode
 	url = git+ssh://aur@aur.archlinux.org/gecode.git
-[submodule "cockatrice-client"]
-	path = cockatrice-client
-	url = git+ssh://aur@aur.archlinux.org/cockatrice-client.git
 [submodule "nodejs-localtunnel"]
 	path = nodejs-localtunnel
 	url = git+ssh://aur@aur.archlinux.org/nodejs-localtunnel.git
-[submodule "dsplight"]
-	path = dsplight
-	url = git+ssh://aur@aur.archlinux.org/dsplight.git
-[submodule "postman"]
-	path = postman
-	url = git+ssh://aur@aur.archlinux.org/postman.git
 [submodule "franz"]
 	path = franz
 	url = git+ssh://aur@aur.archlinux.org/franz.git

@@ -21,14 +21,41 @@ line_limit=`echo -e "$old_commit_text" |
     cut -d: -f1`
 
 # Get the useful lines with updated packages and make them one-line
-packages=`echo -e "$old_commit_text" |
+modified_packages=`echo -e "$old_commit_text" |
     head -n $line_limit |
+    grep -v '.gitmodules\|hooks' |
     grep 'modified\|modificato' |
     cut -d: -f2 |
     sed -e 's/\s\+//' \
         -e 's/hooks\/[a-z -_.]\+//' \
-        -e 's/(.*//' |
-    tr '\n' ' '`
+        -e 's/(.*//' \
+        -e '/^$/d' |
+    tr '\n' ' ' |
+    head -c -1`
+
+deleted_packages=`echo -e "$old_commit_text" |
+    head -n $line_limit |
+    grep -v '.gitmodules\|hooks' |
+    grep 'deleted\|eliminato' |
+    cut -d: -f2 |
+    sed -e 's/\s\+//' \
+        -e 's/hooks\/[a-z -_.]\+//' \
+        -e 's/(.*//' \
+        -e '/^$/d' |
+    tr '\n' ' ' |
+    head -c -1`
+
+added_packages=`echo -e "$old_commit_text" |
+    head -n $line_limit |
+    grep -v '.gitmodules\|hooks' |
+    grep 'new\|nuovo' |
+    cut -d: -f2 |
+    sed -e 's/\s\+//' \
+        -e 's/hooks\/[a-z -_.]\+//' \
+        -e 's/(.*//' \
+        -e '/^$/d' |
+    tr '\n' ' ' |
+    head -c -1`
 
 hooks=`echo -e "$old_commit_text" |
     head -n $line_limit |
@@ -37,10 +64,13 @@ hooks=`echo -e "$old_commit_text" |
     grep 'hooks' |
     sed -e 's/\s\+//' \
         -e 's/(.*//' |
-    tr '\n' ' '`
+    tr '\n' ' ' |
+    head -c -1`
 
-echo "Packages: $packages"
-echo "Hooks:    $hooks"
+echo "Added packages:    $added_packages"
+echo "Modified packages: $modified_packages"
+echo "Deleted packages:  $deleted_packaged"
+echo "Hooks:             $hooks"
 
 # Store the old commit message
 old_commit_message_start=`echo -e "$old_commit_text" |
@@ -53,12 +83,14 @@ old_commit_message=`echo -e "$old_commit_text" |
 # Format the message properly
 rm    $commit_file
 touch $commit_file
-[ -n "$packages" ] && echo -e "updpkg:   $packages" >> "$commit_file"
-[ -n "$hooks"    ] && echo -e "updhooks: ${hooks//hooks\//}" >> "$commit_file"
+[ -n "$added_packages" ]    && echo -e "addpkg:   $added_packages"    >> "$commit_file"
+[ -n "$modified_packages" ] && echo -e "updpkg:   '$modified_packages'" >> "$commit_file"
+[ -n "$deleted_packages" ]  && echo -e "rmpkg:    $deleted_packages"  >> "$commit_file"
+[ -n "$hooks"    ]          && echo -e "updhooks: ${hooks//hooks\//}" >> "$commit_file"
 
-# Add information related to this package
-[ -n "$packages" ] && echo -e "\nLog from the packages:\n" >> "$commit_file"
-for p in $packages
+# Add information related to updated packages
+[ -n "$modified_packages" ] && echo -e "\nLog from the modified packages:\n" >> "$commit_file"
+for p in $modified_packages
 do
     # Skip things that are not Git repositories.
     if [ ! -d $p -a ! -e "$p/.git" ]; then
@@ -73,12 +105,20 @@ do
     popd > /dev/null
 done
 
+# Add information for deleted packages
+[ -n "$deleted_packages" ] && echo -e "\nAbandoned packages:" >> "$commit_file"
+for p in $deleted_packages
+do
+    echo -e "* $p: ..." >> "$commit_file"
+done
+echo >> "$commit_file"
+
 # Add information related to the hooks
 [ -n "$hooks"    ] && echo -e "Hooks updates:" >> "$commit_file"
 
 for h in $hooks
 do
-    echo -e " - $h:" >> "$commit_file"
+    echo -e "* $h:" >> "$commit_file"
 done
 
 # Store the text we manipulated
