@@ -46,3 +46,6 @@
 [submodule "franz"]
 	path = franz
 	url = git+ssh://aur@aur.archlinux.org/franz.git
+[submodule "po-debconf"]
+	path = po-debconf
+	url = git+ssh://aur@aur.archlinux.org/po-debconf.git

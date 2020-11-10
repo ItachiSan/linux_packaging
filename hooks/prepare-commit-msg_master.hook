@@ -84,7 +84,7 @@ old_commit_message=`echo -e "$old_commit_text" |
 rm    $commit_file
 touch $commit_file
 [ -n "$added_packages" ]    && echo -e "addpkg:   $added_packages"    >> "$commit_file"
-[ -n "$modified_packages" ] && echo -e "updpkg:   '$modified_packages'" >> "$commit_file"
+[ -n "$modified_packages" ] && echo -e "updpkg:   $modified_packages" >> "$commit_file"
 [ -n "$deleted_packages" ]  && echo -e "rmpkg:    $deleted_packages"  >> "$commit_file"
 [ -n "$hooks"    ]          && echo -e "updhooks: ${hooks//hooks\//}" >> "$commit_file"
 
