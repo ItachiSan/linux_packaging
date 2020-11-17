@@ -19,7 +19,10 @@ else
 fi
 [[ $? != "0" ]] && exit 1
 
-# make sure .SRCINFO is up to date
-echo -e "Generating and adding .SRCINFO"
-makepkg --printsrcinfo > .SRCINFO
-git add .SRCINFO
+# make sure .SRCINFO is up to date, unless manually done
+if [ -z "$SKIP_SRCINFO" ]
+then
+    echo -e "Generating and adding .SRCINFO"
+    makepkg --printsrcinfo > .SRCINFO
+    git add .SRCINFO
+fi
