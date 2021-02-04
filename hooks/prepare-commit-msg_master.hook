@@ -20,6 +20,9 @@ line_limit=`echo -e "$old_commit_text" |
     grep -n 'stag\|trac' -m 1 |
     cut -d: -f1`
 
+# In case all is committed, read until the last line
+[ -z $line_limit ] && line_limit='-0'
+
 # Get the useful lines with updated packages and make them one-line
 modified_packages=`echo -e "$old_commit_text" |
     head -n $line_limit |
@@ -72,14 +75,6 @@ echo "Modified packages: $modified_packages"
 echo "Deleted packages:  $deleted_packaged"
 echo "Hooks:             $hooks"
 
-# Store the old commit message
-old_commit_message_start=`echo -e "$old_commit_text" |
-    grep -n '^#' -m 1 |
-    cut -d: -f1`
-
-old_commit_message=`echo -e "$old_commit_text" |
-    tail -n +$old_commit_message_start `
-
 # Format the message properly
 rm    $commit_file
 touch $commit_file
@@ -121,8 +116,11 @@ do
     echo -e "* $h:" >> "$commit_file"
 done
 
-# Store the text we manipulated
-echo -e "$old_commit_message" >> "$commit_file"
+echo >> "$commit_file"
+
+# Add the previous commit message, commented
+echo "# Previous commit message:" >> "$commit_file"
+echo "$old_commit_text" | sed 's,^,# ,' >> "$commit_file"
 
 # Back to the previous directory
 popd > /dev/null
