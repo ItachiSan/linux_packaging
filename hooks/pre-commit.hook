@@ -25,4 +25,6 @@ then
     echo -e "Generating and adding .SRCINFO"
     makepkg --printsrcinfo > .SRCINFO
     git add .SRCINFO
+else
+    echo "Remember to generate the .SRCINFO with: makepkg --printsrcinfo > .SRCINFO"
 fi
