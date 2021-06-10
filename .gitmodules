@@ -49,3 +49,6 @@
 [submodule "po-debconf"]
 	path = po-debconf
 	url = git+ssh://aur@aur.archlinux.org/po-debconf.git
+[submodule "perl-file-dirlist"]
+	path = perl-file-dirlist
+	url = git+ssh://aur@aur.archlinux.org/perl-file-dirlist.git
