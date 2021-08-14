@@ -70,3 +70,7 @@
 	path = perl-file-dirlist
 	url = git+ssh://aur@aur.archlinux.org/perl-file-dirlist.git
 	branch = master
+[submodule "crystal-launcher"]
+	path = crystal-launcher
+	url = git+ssh://aur@aur.archlinux.org/crystal-launcher.git
+	branch = master
