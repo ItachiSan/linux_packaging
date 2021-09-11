@@ -74,3 +74,6 @@
 	path = crystal-launcher
 	url = git+ssh://aur@aur.archlinux.org/crystal-launcher.git
 	branch = master
+[submodule "git-credential-manager-core"]
+	path = git-credential-manager-core
+	url = git+ssh://aur@aur.archlinux.org/git-credential-manager-core.git
