@@ -77,3 +77,7 @@
 [submodule "git-credential-manager-core"]
 	path = git-credential-manager-core
 	url = git+ssh://aur@aur.archlinux.org/git-credential-manager-core.git
+	branch = master
+[submodule "faustus-hyperkvm-dkms-git"]
+	path = faustus-hyperkvm-dkms-git
+	url = git+ssh://aur@aur.archlinux.org/faustus-hyperkvm-dkms-git.git
