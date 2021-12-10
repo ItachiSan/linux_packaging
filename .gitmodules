@@ -81,3 +81,6 @@
 [submodule "faustus-hyperkvm-dkms-git"]
 	path = faustus-hyperkvm-dkms-git
 	url = git+ssh://aur@aur.archlinux.org/faustus-hyperkvm-dkms-git.git
+[submodule "xmrig-mo-cuda"]
+	path = xmrig-mo-cuda
+	url = git+ssh://aur@aur.archlinux.org/xmrig-mo-cuda.git
