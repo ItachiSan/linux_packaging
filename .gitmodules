@@ -84,3 +84,6 @@
 [submodule "xmrig-mo-cuda"]
 	path = xmrig-mo-cuda
 	url = git+ssh://aur@aur.archlinux.org/xmrig-mo-cuda.git
+[submodule "pamac-appstream-hook"]
+	path = pamac-appstream-hook
+	url = git+ssh://aur@aur.archlinux.org/pamac-appstream-hook.git
