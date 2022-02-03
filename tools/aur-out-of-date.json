@@ -10,6 +10,8 @@
         "telegram-desktop-bin-dev": "curl -H \"Authorization: token $GITHUB_TOKEN\" -s https://api.github.com/repos/telegramdesktop/tdesktop/releases/latest | python -c 'import json, sys; release = json.loads(sys.stdin.read()); print(release[\"tag_name\"][1:])'",
         "obs-service-tar_scm-git": "curl -H \"Authorization: token $GITHUB_TOKEN\" -s https://api.github.com/repos/openSUSE/obs-service-tar_scm/tags | python -c 'import json, sys; tags = json.loads(sys.stdin.read()); print(tags[0][\"name\"][1:])'",
         "telegram-qt-git": "curl -H \"Authorization: token $GITHUB_TOKEN\" -s https://api.github.com/repos/Kaffeine/telegram-qt/tags | python -c 'import json, sys; tags = json.loads(sys.stdin.read()); print(tags[0][\"name\"][1:])'",
-        "telepathy-morse-git": "curl -H \"Authorization: token $GITHUB_TOKEN\" -s https://api.github.com/repos/TelepathyIM/telepathy-morse/tags | python -c 'import json, sys; tags = json.loads(sys.stdin.read()); print(tags[0][\"name\"].replace(\"telepathy-morse-\", \"\"))'"
+        "telepathy-morse-git": "curl -H \"Authorization: token $GITHUB_TOKEN\" -s https://api.github.com/repos/TelepathyIM/telepathy-morse/tags | python -c 'import json, sys; tags = json.loads(sys.stdin.read()); print(tags[0][\"name\"].replace(\"telepathy-morse-\", \"\"))'",
+        "pamac-appstream-hook": "echo 1",
+        "faustus-hyperkvm-dkms-git": "echo 0.2"
     }
 }

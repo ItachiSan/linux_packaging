@@ -6,10 +6,6 @@
 	path = repacman
 	url = git+ssh://aur@aur.archlinux.org/repacman.git
 	branch = master
-[submodule "telegram-desktop-bin"]
-	path = telegram-desktop-bin
-	url = git+ssh://aur@aur.archlinux.org/telegram-desktop-bin.git
-	branch = master
 [submodule "devscripts"]
 	path = devscripts
 	url = git+ssh://aur@aur.archlinux.org/devscripts.git
