@@ -1,14 +1,14 @@
 {
     "scripts": {
         "crystal-launcher": "echo 20210809",
-        "gecode": "curl -H \"Authorization: token $GITHUB_TOKEN\" -s https://api.github.com/repos/gecode/gecode/releases/latest | python -c 'import json, sys; release = json.loads(sys.stdin.read()); print(release[\"tag_name\"].replace(\"release-\", \"\"))'",
+        "gecode": "curl -H \"Authorization: token $GITHUB_TOKEN\" -s https://api.github.com/repos/gecode/gecode/releases/latest | jq -r '.[\"tag_name\"]' | cut -d'-' -f2",
         "gadget-deadbeef-dhcp": "echo 0.1",
         "gadget-deadbeef-legacy-dhcp": "echo 0.1",
         "minecraftsp-anjocaido": "echo 4.400",
         "repacman": "echo 0.98",
-        "telegram-desktop-bin": "curl -H \"Authorization: token $GITHUB_TOKEN\" -s https://api.github.com/repos/telegramdesktop/tdesktop/releases | python -c 'import json, sys; releases = json.loads(sys.stdin.read()); releases = [r for r in releases if not r[\"prerelease\"]]; print(releases[0][\"tag_name\"][1:])'",
-        "telegram-desktop-bin-dev": "curl -H \"Authorization: token $GITHUB_TOKEN\" -s https://api.github.com/repos/telegramdesktop/tdesktop/releases/latest | python -c 'import json, sys; release = json.loads(sys.stdin.read()); print(release[\"tag_name\"][1:])'",
-        "obs-service-tar_scm-git": "curl -H \"Authorization: token $GITHUB_TOKEN\" -s https://api.github.com/repos/openSUSE/obs-service-tar_scm/tags | python -c 'import json, sys; tags = json.loads(sys.stdin.read()); print(tags[0][\"name\"][1:])'",
+        "telegram-desktop-bin-dev":  "curl -H \"Authorization: token $GITHUB_TOKEN\" -s \"https://api.github.com/repos/telegramdesktop/tdesktop/git/matching-refs/tags?page=1&per_page=1\" | jq '.[-1][\"ref\"]' | sed 's|[\"a-z/]\\+||g'",
+        "telegram-desktop-dev":  "curl -H \"Authorization: token $GITHUB_TOKEN\" -s \"https://api.github.com/repos/telegramdesktop/tdesktop/git/matching-refs/tags?page=1&per_page=1\" | jq '.[-1][\"ref\"]' | sed 's|[\"a-z/]\\+||g'",
+        "obs-service-tar_scm-git": "curl -H \"Authorization: token $GITHUB_TOKEN\" -s \"https://api.github.com/repos/openSUSE/obs-service-tar_scm/git/matching-refs/tags?page=1&per_page=1\" | jq '.[-1][\"ref\"]' | sed 's|[\"a-z/]\\+||g'",
         "telegram-qt-git": "curl -H \"Authorization: token $GITHUB_TOKEN\" -s https://api.github.com/repos/Kaffeine/telegram-qt/tags | python -c 'import json, sys; tags = json.loads(sys.stdin.read()); print(tags[0][\"name\"][1:])'",
         "telepathy-morse-git": "curl -H \"Authorization: token $GITHUB_TOKEN\" -s https://api.github.com/repos/TelepathyIM/telepathy-morse/tags | python -c 'import json, sys; tags = json.loads(sys.stdin.read()); print(tags[0][\"name\"].replace(\"telepathy-morse-\", \"\"))'",
         "pamac-appstream-hook": "echo 1",
