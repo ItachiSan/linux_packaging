@@ -83,3 +83,6 @@
 [submodule "pamac-appstream-hook"]
 	path = pamac-appstream-hook
 	url = git+ssh://aur@aur.archlinux.org/pamac-appstream-hook.git
+[submodule "arc-kde"]
+	path = arc-kde
+	url = git+ssh://aur@aur.archlinux.org/arc-kde.git
