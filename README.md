@@ -40,12 +40,17 @@ Before hacking the packages, you need to get some stuff right:
 
 ## Check for missing updates
 
-Just run the tool:
+This repo has an `nvchecker` wrapper for easily checking for updates.
 
-`./tools/check_updates.sh`
+First, you need to create in the `tools` the `nvchecker_keys.toml`.
+Just copy the example version and add the relevant tokens.
 
-You should have a private Github access token to guarantee consistent API calls,
+As of 2023-02-07, you need to have a private Github access token to guarantee consistent API calls,
 see [the consideration here](https://github.com/simon04/aur-out-of-date#principle).
+
+After this setup, just run the tool:
+
+`./tools/check_updates.sh`.
 
 ## Updating a package
 Now you are practically ready to go: if you want to update the packages, the way is simple:

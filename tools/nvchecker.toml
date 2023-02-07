@@ -1,0 +1,121 @@
+# Format defined here:
+# https://nvchecker.readthedocs.io/en/latest/usage.html#configuration-files
+# Examples here:
+# https://github.com/lilydjwg/nvchecker/blob/master/sample_config.toml
+
+[__config__]
+oldver = "old.json"
+newver = "new.json"
+keyfile = "nvchecker_keys.toml"
+
+[arc-kde]
+source = "github"
+github = "PapirusDevelopmentTeam/arc-kde"
+use_latest_release = true
+
+# Crystal Launcher requires multiple steps.
+# Do a magic inline script for doing that.
+[crystal-launcher]
+source = "cmd"
+cmd = """\
+rm -f launcher-base.jar && \
+curl -O https://launcher.crystal-launcher.net/launcherNX/launcher-base.jar && \
+rm -f version.properties && \
+7z -bso2 e launcher-base.jar version.properties && \
+grep DATE version.properties | sed -E 's,.*=([0-9.]+).*,\\1,' | tr -d '.' && \
+rm -f launcher-base.jar version.properties
+"""
+
+[devscripts]
+source = "debianpkg"
+debianpkg = "devscripts"
+
+[faustus-hyperkvm-dkms-git]
+source = "github"
+github = "Ann1kaB/faustus"
+
+[franz]
+source = "github"
+github = "meetfranz/franz"
+prefix = "v"
+use_latest_release = true
+
+[gadget-deadbeef-dhcp]
+source = "manual"
+manual = "0.1"
+
+[gadget-deadbeef-legacy-dhcp]
+source = "manual"
+manual = "0.1"
+
+[gecode]
+source = "github"
+github = "Gecode/gecode"
+prefix = "release-"
+use_latest_release = true
+
+[git-credential-manager-core]
+source = "github"
+github = "GitCredentialManager/git-credential-manager"
+prefix = "v"
+use_latest_release = true
+
+[gnome-defaults-list]
+source = "debianpkg"
+debianpkg = "gnome-session"
+strip_release = true
+
+[minecraftsp-anjocaido]
+source = "manual"
+manual = "4.400"
+
+[nodejs-localtunnel]
+source = "npm"
+npm = "localtunnel"
+
+[obs-service-tar_scm-git]
+source = "github"
+github = "openSUSE/obs-service-tar_scm"
+use_latest_tag = true
+
+[pamac-appstream-hook]
+source = "manual"
+manual = "1"
+
+[perl-file-dirlist]
+source = "cpan"
+cpan   = "File-DirList"
+
+[po-debconf]
+source    = "debianpkg"
+debianpkg = "po-debconf"
+
+[popcorntime]
+source = "github"
+github = "popcorn-official/popcorn-desktop"
+prefix = "v"
+use_latest_release = true
+
+[repacman]
+source = "manual"
+manual = "0.98"
+
+[telegram-desktop-bin-dev]
+source = "github"
+github = "telegramdesktop/tdesktop"
+branch = "dev"
+prefix = "v"
+use_latest_tag = true
+
+[telegram-desktop-dev]
+source = "github"
+github = "telegramdesktop/tdesktop"
+branch = "dev"
+prefix = "v"
+use_latest_tag = true
+
+[xmrig-mo-cuda]
+source = "github"
+github = "MoneroOcean/xmrig-cuda"
+prefix = "v"
+use_latest_release = true
