@@ -26,7 +26,7 @@ line_limit=`echo -e "$old_commit_text" |
 # Get the useful lines with updated packages and make them one-line
 modified_packages=`echo -e "$old_commit_text" |
     head -n $line_limit |
-    grep -v '.gitmodules\|hooks' |
+    grep -v '.gitmodules\|hooks\|tools' |
     grep 'modified\|modificato' |
     cut -d: -f2 |
     sed -e 's/\s\+//' \
@@ -38,7 +38,7 @@ modified_packages=`echo -e "$old_commit_text" |
 
 deleted_packages=`echo -e "$old_commit_text" |
     head -n $line_limit |
-    grep -v '.gitmodules\|hooks' |
+    grep -v '.gitmodules\|hooks\|tools' |
     grep 'deleted\|eliminato' |
     cut -d: -f2 |
     sed -e 's/\s\+//' \
@@ -50,7 +50,7 @@ deleted_packages=`echo -e "$old_commit_text" |
 
 added_packages=`echo -e "$old_commit_text" |
     head -n $line_limit |
-    grep -v '.gitmodules\|hooks' |
+    grep -v '.gitmodules\|hooks\|tools' |
     grep 'new\|nuovo' |
     cut -d: -f2 |
     sed -e 's/\s\+//' \
@@ -62,9 +62,17 @@ added_packages=`echo -e "$old_commit_text" |
 
 hooks=`echo -e "$old_commit_text" |
     head -n $line_limit |
-    grep 'modif' |
     cut -d: -f2 |
     grep 'hooks' |
+    sed -e 's/\s\+//' \
+        -e 's/(.*//' |
+    tr '\n' ' ' |
+    head -c -1`
+
+tools=`echo -e "$old_commit_text" |
+    head -n $line_limit |
+    cut -d: -f2 |
+    grep 'tools' |
     sed -e 's/\s\+//' \
         -e 's/(.*//' |
     tr '\n' ' ' |
@@ -74,6 +82,7 @@ echo "Added packages:    $added_packages"
 echo "Modified packages: $modified_packages"
 echo "Deleted packages:  $deleted_packaged"
 echo "Hooks:             $hooks"
+echo "Hooks:             $tools"
 
 # Format the message properly
 rm    $commit_file
@@ -82,6 +91,7 @@ touch $commit_file
 [ -n "$modified_packages" ] && echo -e "updpkg:   $modified_packages" >> "$commit_file"
 [ -n "$deleted_packages" ]  && echo -e "rmpkg:    $deleted_packages"  >> "$commit_file"
 [ -n "$hooks"    ]          && echo -e "updhooks: ${hooks//hooks\//}" >> "$commit_file"
+[ -n "$tools"    ]          && echo -e "updtools: ${tools//tools\//}" >> "$commit_file"
 
 # Add information related to updated packages
 [ -n "$modified_packages" ] && echo -e "\nLog from the modified packages:\n" >> "$commit_file"
@@ -114,6 +124,16 @@ echo >> "$commit_file"
 for h in $hooks
 do
     echo -e "* $h:" >> "$commit_file"
+done
+
+echo >> "$commit_file"
+
+# Add information related to the tools
+[ -n "$tools"    ] && echo -e "Tools updates:" >> "$commit_file"
+
+for t in $tools
+do
+    echo -e "* $t:" >> "$commit_file"
 done
 
 echo >> "$commit_file"

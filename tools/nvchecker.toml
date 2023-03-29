@@ -21,7 +21,7 @@ cmd = """\
 rm -f launcher-base.jar && \
 curl -O https://launcher.crystal-launcher.net/launcherNX/launcher-base.jar && \
 rm -f version.properties && \
-7z -bso2 e launcher-base.jar version.properties && \
+bsdtar -xf launcher-base.jar version.properties && \
 grep DATE version.properties | sed -E 's,.*=([0-9.]+).*,\\1,' | tr -d '.' && \
 rm -f launcher-base.jar version.properties
 """
