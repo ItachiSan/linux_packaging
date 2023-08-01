@@ -10,10 +10,6 @@
 	path = devscripts
 	url = git+ssh://aur@aur.archlinux.org/devscripts.git
 	branch = master
-[submodule "telegram-desktop-bin-dev"]
-	path = telegram-desktop-bin-dev
-	url = git+ssh://aur@aur.archlinux.org/telegram-desktop-bin-dev.git
-	branch = master
 [submodule "gadget-deadbeef-dhcp"]
 	path = gadget-deadbeef-dhcp
 	url = git+ssh://aur@aur.archlinux.org/gadget-deadbeef-dhcp.git
@@ -86,3 +82,6 @@
 [submodule "arc-kde"]
 	path = arc-kde
 	url = git+ssh://aur@aur.archlinux.org/arc-kde.git
+[submodule "telegram-desktop-dev-bin"]
+	path = telegram-desktop-dev-bin
+	url = ssh://aur@aur.archlinux.org/telegram-desktop-dev-bin.git
