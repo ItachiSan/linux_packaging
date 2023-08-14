@@ -84,10 +84,10 @@ manual = "1"
 
 [perl-file-dirlist]
 source = "cpan"
-cpan   = "File-DirList"
+cpan = "File-DirList"
 
 [po-debconf]
-source    = "debianpkg"
+source = "debianpkg"
 debianpkg = "po-debconf"
 
 [popcorntime]
@@ -100,7 +100,7 @@ use_latest_release = true
 source = "manual"
 manual = "0.98"
 
-[telegram-desktop-bin-dev]
+[telegram-desktop-dev-bin]
 source = "github"
 github = "telegramdesktop/tdesktop"
 branch = "dev"

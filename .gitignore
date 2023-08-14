@@ -1,8 +1,12 @@
 # Private local repo
-deps_repo
+deps_repo/*
+# Allow for local repo scripts
+!deps_repo/scripts/
 # WIP packages
-wip
+wip/*
 # Ignore nvchecker files
 tools/new.json
 tools/old.json
 tools/nvchecker_keys.toml
+# VSCode stuff
+.vscode/*
