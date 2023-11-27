@@ -89,3 +89,7 @@
 	path = waybar-hyprland
 	url = git+ssh://aur@aur.archlinux.org/waybar-hyprland.git
 	branch = master
+[submodule "ferdium-electron"]
+	path = ferdium-electron
+	url = ssh://aur@aur.archlinux.org/ferdium-electron.git
+	branch = master
