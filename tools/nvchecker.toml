@@ -65,6 +65,13 @@ source = "debianpkg"
 debianpkg = "gnome-session"
 strip_release = true
 
+[java17-openjfx]
+source = "github"
+github = "openjdk/jfx17u"
+use_latest_tag = true
+from_pattern = '([0-9.]+)\+(\d+)'
+to_pattern = '\1.u\2'
+
 [minecraftsp-anjocaido]
 source = "manual"
 manual = "4.400"
@@ -122,5 +129,6 @@ use_latest_release = true
 [xmrig-mo-cuda]
 source = "github"
 github = "MoneroOcean/xmrig-cuda"
-prefix = "v"
 use_latest_release = true
+from_pattern = 'v([0-9.]+)-mo(\d+)'
+to_pattern = '\1mo\2'

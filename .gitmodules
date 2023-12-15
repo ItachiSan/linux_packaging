@@ -93,3 +93,7 @@
 	path = ferdium-electron
 	url = ssh://aur@aur.archlinux.org/ferdium-electron.git
 	branch = master
+[submodule "java17-openjfx"]
+	path = java17-openjfx
+	url = ssh://aur@aur.archlinux.org/java17-openjfx.git
+	branch = master
