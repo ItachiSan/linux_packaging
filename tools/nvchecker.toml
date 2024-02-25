@@ -121,11 +121,6 @@ branch = "dev"
 prefix = "v"
 use_latest_tag = true
 
-[waybar-hyprland]
-source = "github"
-github = "Alexays/Waybar"
-use_latest_release = true
-
 [xmrig-mo-cuda]
 source = "github"
 github = "MoneroOcean/xmrig-cuda"

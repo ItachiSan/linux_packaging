@@ -85,10 +85,6 @@
 [submodule "telegram-desktop-dev-bin"]
 	path = telegram-desktop-dev-bin
 	url = ssh://aur@aur.archlinux.org/telegram-desktop-dev-bin.git
-[submodule "waybar-hyprland"]
-	path = waybar-hyprland
-	url = git+ssh://aur@aur.archlinux.org/waybar-hyprland.git
-	branch = master
 [submodule "ferdium-electron"]
 	path = ferdium-electron
 	url = ssh://aur@aur.archlinux.org/ferdium-electron.git
