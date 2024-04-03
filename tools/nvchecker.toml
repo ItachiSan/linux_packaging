@@ -31,8 +31,9 @@ source = "debianpkg"
 debianpkg = "devscripts"
 
 [faustus-hyperkvm-dkms-git]
-source = "github"
-github = "Ann1kaB/faustus"
+source = "regex"
+url = "https://raw.githubusercontent.com/Ann1kaB/faustus/master/dkms.conf"
+regex = 'PACKAGE_VERSION="([0-9.]+)"'                                      # github = "Ann1kaB/faustus"
 
 [franz]
 source = "github"

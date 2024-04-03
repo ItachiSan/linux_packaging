@@ -9,11 +9,13 @@ In case you want to customize it, change the `pkg_updater` method.
 Partially inspired from:
 https://github.com/Foxboron/archlinux-pkgbuilds/blob/master/.repo/get-current-versions.sh
 """
+
 import glob
 import json
 import pathlib
 
 from nvchecker.core import load_file
+
 
 def add_to_multidict(dict_: dict, key, value):
     """Add a value to a dict which can either have a single value or a list of them."""
@@ -26,6 +28,7 @@ def add_to_multidict(dict_: dict, key, value):
             dict_[key] = [previous_value, value]
         else:
             dict_[key].append(value)
+
 
 def parse_srcinfo(srcinfo_path: str) -> tuple[dict[str, str], dict[str, str]]:
     """Parse a .SRCINFO and returns data as a dictionary for each package."""
@@ -43,7 +46,7 @@ def parse_srcinfo(srcinfo_path: str) -> tuple[dict[str, str], dict[str, str]]:
 
         # Parse the line
         # print(line)
-        key, value = line.split('=', maxsplit=1)
+        key, value = line.split("=", maxsplit=1)
         key, value = key.strip(), value.strip()
 
         # Handle package switch
@@ -59,18 +62,22 @@ def parse_srcinfo(srcinfo_path: str) -> tuple[dict[str, str], dict[str, str]]:
 
     return pkgbase, packages
 
-def find_srcinfos(folder: pathlib.Path | str = '.'):
+
+def find_srcinfos(folder: pathlib.Path | str = "."):
     """
     Parse all .SRCINFO files found in a specific directory and provide all relevant packages.
     """
-    return glob.glob(f'{folder}/**/.SRCINFO')
+    return glob.glob(f"{folder}/**/.SRCINFO")
+
 
 def old_refresher():
     """Main method for storing the current versions of the packages."""
     this_script_folder = pathlib.Path(__file__).parent
 
     nvchecker_config_path = this_script_folder / "nvchecker.toml"
-    nvchecker_config, nvchecker_options = load_file(nvchecker_config_path, use_keymanager=False)
+    nvchecker_config, nvchecker_options = load_file(
+        nvchecker_config_path, use_keymanager=False
+    )
     nvchecker_old_version = nvchecker_options.ver_files[0]
 
     srcinfos = find_srcinfos(this_script_folder.parent)
@@ -78,13 +85,20 @@ def old_refresher():
     current_versions = {}
     for srcinfo in srcinfos:
         pkgbase, packages = parse_srcinfo(srcinfo)
-        current_versions[pkgbase["name"]] = pkgbase["pkgver"]
+
+        pkgbase_name = pkgbase["name"]
+        pkgbase_ver = pkgbase["pkgver"]
+        if pkgbase_name.endswith("-git") and ".r" in pkgbase_ver:
+            pkgbase_ver = ".".join(pkgbase_ver.split(".")[:-1])
+
+        current_versions[pkgbase_name] = pkgbase_ver
 
     # Sort the dictionary
     current_versions = dict(sorted(current_versions.items()))
 
-    with open(nvchecker_old_version, 'w') as old_version_fp:
+    with open(nvchecker_old_version, "w") as old_version_fp:
         json.dump(current_versions, old_version_fp, indent=4)
+
 
 if __name__ == "__main__":
     old_refresher()
