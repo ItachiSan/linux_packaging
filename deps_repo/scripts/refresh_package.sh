@@ -5,7 +5,8 @@ OLDPWD=`pwd`
 MY_DIR=`readlink -f $0 | xargs dirname`
 REPO_DIR=`dirname $MY_DIR`
 BUILD_DIR="${REPO_DIR}/build"
-DB_FILE="aur_dependencies.db.tar.zst"
+REPO_NAME="aur_dependencies"
+DB_FILE="${REPO_NAME}.db.tar.zst"
 
 cd $REPO_DIR
 
@@ -26,14 +27,29 @@ function package_name() {
         sed -E "s,^([a-z0-9.-]+)-[a-z0-9.+]+-[0-9]+-($(uname -m)|any).pkg.tar.[a-z]+$,\1,"
 }
 
+function all_packages() {
+    package_query=""
+    for p in $(pacman -Slq $REPO_NAME)
+    do
+        package_query="${package_query}arg[]=$p&"
+    done
+    # Now build the query, retrieve the info and fetch what we need
+    curl -s "https://aur.archlinux.org/rpc/v5/info?${package_query}" \
+        | jq ".results[].PackageBase" \
+        | sort \
+        | uniq \
+        | tr -d '"'
+}
+
 # Get the packages
 packages="$@"
 if [ -z "$packages" ]
 then
-    for package_file in *.pkg.tar.*;
-    do
-        packages="$packages $(package_name $package_file)"
-    done
+    # for package_file in *.pkg.tar.*;
+    # do
+    #     packages="$packages $(package_name $package_file)"
+    # done
+    packages="$(all_packages)"
 fi
 echo "# Working on packages:"
 echo "$packages"
@@ -74,7 +90,12 @@ do
 
     echo "# Building the package ..."
     sudo pacman -Sy
-    yes | env MAKEFLAGS="-j$(nproc)" makepkg -src
+    if [ $package = "java17-openjfx" ]
+    then
+        makepkg -src
+    else
+        yes | makepkg -src
+    fi
     makepkg_exit_code=$?
     if [ $makepkg_exit_code -ne 0 ]
     then
