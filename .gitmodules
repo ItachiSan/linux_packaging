@@ -97,3 +97,11 @@
 	path = git-credential-manager
 	url = git+ssh://aur@aur.archlinux.org/git-credential-manager
 	branch = master
+[submodule "vpn-unlimited-bin"]
+	path = vpn-unlimited-bin
+	url = ssh://aur@aur.archlinux.org/vpn-unlimited-bin.git
+	branch = master
+[submodule "boost174"]
+	path = boost174
+	url = ssh://aur@aur.archlinux.org/boost174.git
+	branch = master
