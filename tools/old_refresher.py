@@ -91,13 +91,15 @@ def old_refresher():
         if pkgbase_name.endswith("-git") and ".r" in pkgbase_ver:
             pkgbase_ver = ".".join(pkgbase_ver.split(".")[:-1])
 
-        current_versions[pkgbase_name] = pkgbase_ver
+        current_versions[pkgbase_name] = {"version": pkgbase_ver}
 
     # Sort the dictionary
     current_versions = dict(sorted(current_versions.items()))
 
+    versions_data = {"version": 2, "data": current_versions}
+
     with open(nvchecker_old_version, "w") as old_version_fp:
-        json.dump(current_versions, old_version_fp, indent=4)
+        json.dump(versions_data, old_version_fp, indent=4)
 
 
 if __name__ == "__main__":

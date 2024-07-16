@@ -55,7 +55,7 @@ github = "Gecode/gecode"
 prefix = "release-"
 use_latest_release = true
 
-[git-credential-manager-core]
+[git-credential-manager]
 source = "github"
 github = "GitCredentialManager/git-credential-manager"
 prefix = "v"
@@ -121,6 +121,15 @@ github = "telegramdesktop/tdesktop"
 branch = "dev"
 prefix = "v"
 use_latest_tag = true
+
+[vpn-unlimited-bin]
+source = "cmd"
+cmd = """\
+curl -ILs -w %{url_effective} https://www.vpnunlimited.com/api/keepsolid/vpn-download?platform=linux-new \
+| tail -n1 \
+| grep -oP "vpn-unlimited_\\K[0-9]+\\.[0-9]+\\.[0-9]+"
+"""
+
 
 [xmrig-mo-cuda]
 source = "github"
