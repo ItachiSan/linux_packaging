@@ -88,8 +88,17 @@ def old_refresher():
 
         pkgbase_name = pkgbase["name"]
         pkgbase_ver = pkgbase["pkgver"]
+
         if pkgbase_name.endswith("-git") and ".r" in pkgbase_ver:
             pkgbase_ver = ".".join(pkgbase_ver.split(".")[:-1])
+
+        # For Debian packages, these packages should also get their release number in check.
+        if (
+            pkgbase_name in nvchecker_config
+            and nvchecker_config[pkgbase_name]["source"] == "debianpkg"
+            and nvchecker_config[pkgbase_name].get("strip_release") is False
+        ):
+            pkgbase_ver += f"-{pkgbase['pkgrel']}"
 
         current_versions[pkgbase_name] = {"version": pkgbase_ver}
 

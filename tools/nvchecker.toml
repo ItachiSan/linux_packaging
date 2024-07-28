@@ -33,7 +33,8 @@ debianpkg = "devscripts"
 [faustus-hyperkvm-dkms-git]
 source = "regex"
 url = "https://raw.githubusercontent.com/Ann1kaB/faustus/master/dkms.conf"
-regex = 'PACKAGE_VERSION="([0-9.]+)"'                                      # github = "Ann1kaB/faustus"
+regex = 'PACKAGE_VERSION="([0-9.]+)"'
+# github = "Ann1kaB/faustus"
 
 [franz]
 source = "github"
@@ -64,7 +65,7 @@ use_latest_release = true
 [gnome-defaults-list]
 source = "debianpkg"
 debianpkg = "gnome-session"
-strip_release = true
+strip_release = false
 
 [java17-openjfx]
 source = "github"
