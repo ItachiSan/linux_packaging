@@ -9,9 +9,7 @@ cd $REPO_DIR
 
 for package in *.pkg.*
 do
-    package_name=`echo $package | sed -E 's,^([a-z-]+)-.*$,\1,'`
-    repo-remove aur_dependencies.db.tar.zst $package_name
-    repo-add    aur_dependencies.db.tar.zst $package
+    repo-add -n -R aur_dependencies.db.tar.zst $package
 done
 
 cd $OLDPWD

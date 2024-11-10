@@ -65,28 +65,21 @@ for package in $packages
 do
     echo "# Working on: $package"
 
-    now=$(date +%s)
-    package_file="$(find . -maxdepth 1 -type f -name "$package*" | head -n 1)"
-    if [ -f "$package_file" ]
-    then
-        creation_time="$(stat -c %W $package_file)"
-    else
-        creation_time=0
-    fi
-    time_delta="$(( $now - $creation_time ))"
-
-    if [ "$time_delta" -lt 3600 ]
-    then
-        echo "Package $package_file is less than 1 hour old, skip rebuild ..."
-        echo
-        continue
-    fi
-
     cd $BUILD_DIR
 
     echo "# Cloning the Git repository ..."
-    git clone "https://aur.archlinux.org/${package}.git"
+    git clone --quiet "https://aur.archlinux.org/${package}.git"
     cd $package
+
+    remote_version="$(grep pkgver .SRCINFO | cut -d= -f2 | tr -d ' ')"
+    repo_version="$(LANG=C pacman -Si "${REPO_NAME}/${package}" | grep "^Version" | cut -d: -f2- | cut -d- -f1 | tr -d ' ' | cut -d: -f2)"
+    version_check=$(vercmp $repo_version $remote_version)
+    if [ $version_check -ge 0 ]
+    then
+        echo "Package $package is at the latest revision $repo_version (remote: $remote_version), skip building..."
+        echo
+        continue
+    fi
 
     echo "# Building the package ..."
     sudo pacman -Sy
@@ -113,8 +106,9 @@ do
         rm -v $REPO_DIR/$current_package_file-*.pkg.tar.*
         mv -v $package_file $REPO_DIR
         cd $REPO_DIR
-        repo-remove $DB_FILE $current_package_file
-        repo-add    $DB_FILE $package_file
+        #repo-remove    $DB_FILE $current_package_file
+        #repo-add       $DB_FILE $package_file
+        repo-add -n -R $DB_FILE $package_file
         cd $BUILD_DIR/$package
     done
 
