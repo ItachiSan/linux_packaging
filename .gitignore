@@ -10,3 +10,6 @@ tools/old.json
 tools/nvchecker_keys.toml
 # VSCode stuff
 .vscode/*
+# Ignore files in the package directories
+**/src/*
+**/pkg/*
