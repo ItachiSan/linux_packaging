@@ -82,11 +82,6 @@ manual = "4.400"
 source = "npm"
 npm = "localtunnel"
 
-[obs-service-tar_scm-git]
-source = "github"
-github = "openSUSE/obs-service-tar_scm"
-use_latest_tag = true
-
 [pamac-appstream-hook]
 source = "manual"
 manual = "1"
@@ -109,13 +104,6 @@ use_latest_release = true
 source = "manual"
 manual = "0.98"
 
-[telegram-desktop-dev-bin]
-source = "github"
-github = "telegramdesktop/tdesktop"
-branch = "dev"
-prefix = "v"
-use_latest_tag = true
-
 [telegram-desktop-dev]
 source = "github"
 github = "telegramdesktop/tdesktop"
@@ -123,14 +111,12 @@ branch = "dev"
 prefix = "v"
 use_latest_tag = true
 
-[vpn-unlimited-bin]
-source = "cmd"
-cmd = """\
-curl -ILs -w %{url_effective} https://www.vpnunlimited.com/api/keepsolid/vpn-download?platform=linux-new \
-| tail -n1 \
-| grep -oP "vpn-unlimited_\\K[0-9]+\\.[0-9]+\\.[0-9]+"
-"""
-
+[telegram-desktop-dev-bin]
+source = "github"
+github = "telegramdesktop/tdesktop"
+branch = "dev"
+prefix = "v"
+use_latest_tag = true
 
 [xmrig-mo-cuda]
 source = "github"

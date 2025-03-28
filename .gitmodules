@@ -30,18 +30,6 @@
 	path = telegram-desktop-dev
 	url = git+ssh://aur@aur.archlinux.org/telegram-desktop-dev.git
 	branch = master
-[submodule "telegram-qt-git"]
-	path = telegram-qt-git
-	url = git+ssh://aur@aur.archlinux.org/telegram-qt-git.git
-	branch = master
-[submodule "telepathy-morse-git"]
-	path = telepathy-morse-git
-	url = git+ssh://aur@aur.archlinux.org/telepathy-morse-git.git
-	branch = master
-[submodule "obs-service-tar_scm-git"]
-	path = obs-service-tar_scm-git
-	url = git+ssh://aur@aur.archlinux.org/obs-service-tar_scm-git.git
-	branch = master
 [submodule "gecode"]
 	path = gecode
 	url = git+ssh://aur@aur.archlinux.org/gecode.git
@@ -65,10 +53,6 @@
 [submodule "crystal-launcher"]
 	path = crystal-launcher
 	url = git+ssh://aur@aur.archlinux.org/crystal-launcher.git
-	branch = master
-[submodule "git-credential-manager-core"]
-	path = git-credential-manager-core
-	url = git+ssh://aur@aur.archlinux.org/git-credential-manager-core.git
 	branch = master
 [submodule "faustus-hyperkvm-dkms-git"]
 	path = faustus-hyperkvm-dkms-git
@@ -96,12 +80,4 @@
 [submodule "git-credential-manager"]
 	path = git-credential-manager
 	url = git+ssh://aur@aur.archlinux.org/git-credential-manager
-	branch = master
-[submodule "vpn-unlimited-bin"]
-	path = vpn-unlimited-bin
-	url = ssh://aur@aur.archlinux.org/vpn-unlimited-bin.git
-	branch = master
-[submodule "boost174"]
-	path = boost174
-	url = ssh://aur@aur.archlinux.org/boost174.git
 	branch = master
