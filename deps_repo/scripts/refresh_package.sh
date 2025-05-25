@@ -73,8 +73,8 @@ do
 
     remote_version="$(grep pkgver .SRCINFO | cut -d= -f2 | tr -d ' ')"
     repo_version="$(LANG=C pacman -Si "${REPO_NAME}/${package}" | grep "^Version" | cut -d: -f2- | cut -d- -f1 | tr -d ' ' | cut -d: -f2)"
-    version_check=$(vercmp $repo_version $remote_version)
-    if [ $version_check -ge 0 ]
+    version_check=$(vercmp "$repo_version" $remote_version)
+    if [ -n "$version_check" -a $version_check -ge 0 ]
     then
         echo "Package $package is at the latest revision $repo_version (remote: $remote_version), skip building..."
         echo
@@ -83,7 +83,7 @@ do
 
     echo "# Building the package ..."
     sudo pacman -Sy
-    if [ $package = "java17-openjfx" ]
+    if [ $package = "java17-openjfx" -o $package = "electron33" ]
     then
         makepkg -src
     else
