@@ -81,3 +81,6 @@
 	path = git-credential-manager
 	url = git+ssh://aur@aur.archlinux.org/git-credential-manager
 	branch = master
+[submodule "discord-electron-openasar"]
+	path = discord-electron-openasar
+	url = git+ssh://aur@aur.archlinux.org/discord-electron-openasar.git
