@@ -96,7 +96,7 @@ debianpkg = "po-debconf"
 
 [popcorntime]
 source = "github"
-github = "popcorn-official/popcorn-desktop"
+github = "popcorn-time-ru/popcorn-desktop"
 prefix = "v"
 use_latest_release = true
 

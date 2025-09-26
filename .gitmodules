@@ -84,3 +84,6 @@
 [submodule "discord-electron-openasar"]
 	path = discord-electron-openasar
 	url = git+ssh://aur@aur.archlinux.org/discord-electron-openasar.git
+[submodule "obs-plugin-browser"]
+	path = obs-plugin-browser
+	url = ssh://aur@aur.archlinux.org/obs-plugin-browser.git
