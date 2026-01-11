@@ -81,6 +81,7 @@ do
         continue
     fi
 
+    echo "# Package $package can be updated from version $repo_version to $remote_version."
     echo "# Building the package ..."
     sudo pacman -Sy
     if [ $package = "java17-openjfx" -o $package = "electron33" ]
