@@ -8,115 +8,11 @@ oldver = "old.json"
 newver = "new.json"
 keyfile = "nvchecker_keys.toml"
 
-[arc-kde]
-source = "github"
-github = "PapirusDevelopmentTeam/arc-kde"
-use_latest_release = true
-
-# Crystal Launcher requires multiple steps.
-# Do a magic inline script for doing that.
-[crystal-launcher]
-source = "cmd"
-cmd = """\
-rm -f launcher-base.jar && \
-curl -O https://launcher.crystal-launcher.net/launcherNX/launcher-base.jar && \
-rm -f version.properties && \
-bsdtar -xf launcher-base.jar version.properties && \
-grep DATE version.properties | sed -E 's,.*=([0-9.]+).*,\\1,' | tr -d '.' && \
-rm -f launcher-base.jar version.properties
-"""
-
-[devscripts]
-source = "debianpkg"
-debianpkg = "devscripts"
-
-[faustus-hyperkvm-dkms-git]
-source = "regex"
-url = "https://raw.githubusercontent.com/Ann1kaB/faustus/master/dkms.conf"
-regex = 'PACKAGE_VERSION="([0-9.]+)"'
-# github = "Ann1kaB/faustus"
-
-[franz]
-source = "github"
-github = "meetfranz/franz"
-prefix = "v"
-use_latest_release = true
-
-[gadget-deadbeef-dhcp]
-source = "manual"
-manual = "0.1"
-
-[gadget-deadbeef-legacy-dhcp]
-source = "manual"
-manual = "0.1"
-
-[gecode]
-source = "github"
-github = "Gecode/gecode"
-prefix = "release-"
-use_latest_release = true
-
-[git-credential-manager]
-source = "github"
-github = "GitCredentialManager/git-credential-manager"
-prefix = "v"
-use_latest_release = true
-
-[gnome-defaults-list]
-source = "debianpkg"
-debianpkg = "gnome-session"
-strip_release = false
-
-[java17-openjfx]
-source = "github"
-github = "openjdk/jfx17u"
-use_latest_tag = true
-from_pattern = '([0-9.]+)\+(\d+)'
-to_pattern = '\1.u\2'
-
-[minecraftsp-anjocaido]
-source = "manual"
-manual = "4.400"
-
-[nodejs-localtunnel]
-source = "npm"
-npm = "localtunnel"
-
-[pamac-appstream-hook]
-source = "manual"
-manual = "1"
-
-[perl-file-dirlist]
-source = "cpan"
-cpan = "File-DirList"
-
-[po-debconf]
-source = "debianpkg"
-debianpkg = "po-debconf"
-
 [popcorntime]
 source = "github"
 github = "popcorn-time-ru/popcorn-desktop"
 prefix = "v"
 use_latest_release = true
-
-[repacman]
-source = "manual"
-manual = "0.98"
-
-[telegram-desktop-dev]
-source = "github"
-github = "telegramdesktop/tdesktop"
-branch = "dev"
-prefix = "v"
-use_latest_tag = true
-
-[telegram-desktop-dev-bin]
-source = "github"
-github = "telegramdesktop/tdesktop"
-branch = "dev"
-prefix = "v"
-use_latest_tag = true
 
 [xmrig-mo-cuda]
 source = "github"

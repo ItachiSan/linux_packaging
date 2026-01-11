@@ -1,85 +1,13 @@
-[submodule "minecraftsp-anjocaido"]
-	path = minecraftsp-anjocaido
-	url = git+ssh://aur@aur.archlinux.org/minecraftsp-anjocaido.git
-	branch = master
-[submodule "repacman"]
-	path = repacman
-	url = git+ssh://aur@aur.archlinux.org/repacman.git
-	branch = master
-[submodule "devscripts"]
-	path = devscripts
-	url = git+ssh://aur@aur.archlinux.org/devscripts.git
-	branch = master
-[submodule "gadget-deadbeef-dhcp"]
-	path = gadget-deadbeef-dhcp
-	url = git+ssh://aur@aur.archlinux.org/gadget-deadbeef-dhcp.git
-	branch = master
-[submodule "gadget-deadbeef-legacy-dhcp"]
-	path = gadget-deadbeef-legacy-dhcp
-	url = git+ssh://aur@aur.archlinux.org/gadget-deadbeef-legacy-dhcp.git
-	branch = master
-[submodule "gnome-defaults-list"]
-	path = gnome-defaults-list
-	url = git+ssh://aur@aur.archlinux.org/gnome-defaults-list.git
-	branch = master
 [submodule "popcorntime"]
 	path = popcorntime
 	url = git+ssh://aur@aur.archlinux.org/popcorntime.git
 	branch = master
-[submodule "telegram-desktop-dev"]
-	path = telegram-desktop-dev
-	url = git+ssh://aur@aur.archlinux.org/telegram-desktop-dev.git
-	branch = master
-[submodule "gecode"]
-	path = gecode
-	url = git+ssh://aur@aur.archlinux.org/gecode.git
-	branch = master
-[submodule "nodejs-localtunnel"]
-	path = nodejs-localtunnel
-	url = git+ssh://aur@aur.archlinux.org/nodejs-localtunnel.git
-	branch = master
-[submodule "franz"]
-	path = franz
-	url = git+ssh://aur@aur.archlinux.org/franz.git
-	branch = master
-[submodule "po-debconf"]
-	path = po-debconf
-	url = git+ssh://aur@aur.archlinux.org/po-debconf.git
-	branch = master
-[submodule "perl-file-dirlist"]
-	path = perl-file-dirlist
-	url = git+ssh://aur@aur.archlinux.org/perl-file-dirlist.git
-	branch = master
-[submodule "crystal-launcher"]
-	path = crystal-launcher
-	url = git+ssh://aur@aur.archlinux.org/crystal-launcher.git
-	branch = master
-[submodule "faustus-hyperkvm-dkms-git"]
-	path = faustus-hyperkvm-dkms-git
-	url = git+ssh://aur@aur.archlinux.org/faustus-hyperkvm-dkms-git.git
 [submodule "xmrig-mo-cuda"]
 	path = xmrig-mo-cuda
 	url = git+ssh://aur@aur.archlinux.org/xmrig-mo-cuda.git
-[submodule "pamac-appstream-hook"]
-	path = pamac-appstream-hook
-	url = git+ssh://aur@aur.archlinux.org/pamac-appstream-hook.git
-[submodule "arc-kde"]
-	path = arc-kde
-	url = git+ssh://aur@aur.archlinux.org/arc-kde.git
-[submodule "telegram-desktop-dev-bin"]
-	path = telegram-desktop-dev-bin
-	url = ssh://aur@aur.archlinux.org/telegram-desktop-dev-bin.git
 [submodule "ferdium-electron"]
 	path = ferdium-electron
 	url = ssh://aur@aur.archlinux.org/ferdium-electron.git
-	branch = master
-[submodule "java17-openjfx"]
-	path = java17-openjfx
-	url = ssh://aur@aur.archlinux.org/java17-openjfx.git
-	branch = master
-[submodule "git-credential-manager"]
-	path = git-credential-manager
-	url = git+ssh://aur@aur.archlinux.org/git-credential-manager
 	branch = master
 [submodule "discord-electron-openasar"]
 	path = discord-electron-openasar
