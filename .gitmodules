@@ -15,3 +15,9 @@
 [submodule "libjxl-0.11"]
 	path = libjxl-0.11
 	url = git+ssh://aur@aur.archlinux.org/libjxl-0.11
+[submodule "9router"]
+	path = 9router
+	url = git+ssh://aur@aur.archlinux.org/9router.git
+[submodule "pi-agent-rust"]
+	path = pi-agent-rust
+	url = git+ssh://aur@aur.archlinux.org/pi-agent-rust.git
