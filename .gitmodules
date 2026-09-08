@@ -21,3 +21,6 @@
 [submodule "pi-agent-rust"]
 	path = pi-agent-rust
 	url = git+ssh://aur@aur.archlinux.org/pi-agent-rust.git
+[submodule "ik-llama.cpp-cuda-opt-git"]
+	path = ik-llama.cpp-cuda-opt-git
+	url = git+ssh://aur.archlinux.org/ik-llama.cpp-cuda-opt-git.git
